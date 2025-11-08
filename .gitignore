@@ -1,0 +1,30 @@
+# Sensitive documents
+Marketing Strategy for Pro Cleaning Gurus - Adelaide - 2025-2026.pdf
+*.pdf
+
+# Images that might be drafts or test files
+images/fake.jpg
+images/layout.jpg
+images/sketch.jpg
+images/test.png
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
+*.log

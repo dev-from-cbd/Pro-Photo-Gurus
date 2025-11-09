@@ -341,6 +341,15 @@ nav a:hover {
     border-left: 5px solid var(--accent);
 }
 
+.trust-details p {
+    text-align: left;
+    line-height: 1.7;
+}
+
+.trust-details h3 {
+    text-align: left;
+}
+
 .checks-list {
     text-align: left;
     margin: 16px auto;

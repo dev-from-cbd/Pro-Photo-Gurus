@@ -214,13 +214,24 @@ nav a:hover {
     max-width: none;
 }
 
+/* Service header: icon inline with title */
+.service-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.service-header h3 {
+    margin: 0;
+}
+
 /* Service icons */
 .service-icon {
-    width: 32px;
-    height: 32px;
+    width: 28px;
+    height: 28px;
     color: #3498db;
-    margin-bottom: 12px;
-    display: block;
+    flex-shrink: 0;
 }
 
 /* Testimonials */

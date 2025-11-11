@@ -463,9 +463,46 @@ footer a:focus {
         font-size: 2rem;
     }
 
+    /* Discounts page mobile tuning */
+    .discounts-hero {
+        margin-top: 70px; /* compensate fixed nav */
+    }
+    .discounts-hero .parallax-content {
+        padding: 14px 16px;
+        background: rgba(0,0,0,0.35);
+        border-radius: 8px;
+    }
+    .discounts-hero .parallax-content h2 {
+        line-height: 1.25;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+    }
+    .discounts-hero .parallax-content p {
+        font-size: 0.95rem;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+    }
+    .discounts .discount-table {
+        font-size: 0.95rem;
+    }
+    .discounts .discount-table th,
+    .discounts .discount-table td {
+        padding: 12px 14px;
+    }
+
     /* Mobile-friendly fallback for testimonials parallax */
     .testimonials {
         background-attachment: scroll;
         background-position: center center;
+    }
+}
+
+@media (max-width: 420px) {
+    .parallax {
+        height: 36vh;
+    }
+    .discounts-hero .parallax-content h2 {
+        font-size: 1.4rem;
+    }
+    .discounts-hero .parallax-content p {
+        display: none; /* hide subheading on very small screens */
     }
 }

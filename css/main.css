@@ -108,6 +108,33 @@ nav a:hover {
     color: #3498db;
 }
 
+/* Burger button */
+.menu-toggle {
+    display: none;
+    position: relative;
+    width: 42px;
+    height: 42px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+.menu-toggle .bar {
+    position: absolute;
+    width: 26px;
+    height: 3px;
+    background: #2c3e50;
+    border-radius: 3px;
+    transition: transform 300ms ease, opacity 300ms ease, top 300ms ease;
+}
+.menu-toggle .bar:nth-child(1) { top: 13px; }
+.menu-toggle .bar:nth-child(2) { top: 20px; }
+.menu-toggle .bar:nth-child(3) { top: 27px; }
+nav.open .menu-toggle .bar:nth-child(1) { top: 20px; transform: rotate(45deg); }
+nav.open .menu-toggle .bar:nth-child(2) { opacity: 0; }
+nav.open .menu-toggle .bar:nth-child(3) { top: 20px; transform: rotate(-45deg); }
+
 /* Parallax Sections */
 .parallax {
     height: 60vh;
@@ -477,6 +504,30 @@ footer a:focus {
 
     nav ul {
         gap: 20px;
+    }
+
+    /* Mobile menu layout */
+    .menu-toggle { display: inline-flex; }
+    nav ul {
+        position: fixed;
+        top: 70px;
+        left: 20px;
+        right: 20px;
+        background: rgba(255,255,255,0.98);
+        backdrop-filter: blur(10px);
+        border-radius: 14px;
+        box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+        padding: 16px;
+        flex-direction: column;
+        gap: 14px;
+        display: none;
+        animation: menuSlideDown 280ms ease forwards;
+    }
+    nav.open ul { display: flex; }
+
+    @keyframes menuSlideDown {
+        from { transform: translateY(-10px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
     }
 
     /* Slightly reduce parallax section height on mobile to avoid long empty gaps */

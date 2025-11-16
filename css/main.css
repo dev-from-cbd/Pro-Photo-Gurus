@@ -344,6 +344,24 @@ nav.open .menu-toggle .bar:nth-child(3) {
     border-top: 1px solid #e5e7eb;
 }
 
+.franchise h2,
+.franchise h3,
+.franchise h4 {
+    text-align: left;
+}
+
+.franchise p,
+.franchise ul {
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.franchise .franchise-list {
+    list-style: disc;
+    padding-left: 20px;
+}
+
 /* Discounts table styling */
 .discount-table {
     width: 100%;

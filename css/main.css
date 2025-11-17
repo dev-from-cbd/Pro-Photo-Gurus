@@ -616,6 +616,22 @@ footer {
     padding: 40px 20px;
 }
 
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
 /* Improve footer link contrast and accessibility */
 footer a {
     color: #ffffff;

@@ -4,17 +4,22 @@ const slides = document.querySelectorAll('.slide');
 const totalSlides = slides.length;
 
 function showSlide(index) {
+    if (totalSlides === 0) return;
     slides.forEach(slide => slide.classList.remove('active'));
     slides[index].classList.add('active');
 }
 
 function nextSlide() {
+    if (totalSlides === 0) return;
     currentSlide = (currentSlide + 1) % totalSlides;
     showSlide(currentSlide);
 }
 
 // Auto-advance slider every 4 seconds
-setInterval(nextSlide, 4000);
+if (totalSlides > 0) {
+    showSlide(0);
+    setInterval(nextSlide, 4000);
+}
 
 // Smooth scrolling for same-page navigation links only
 document.querySelectorAll('nav a').forEach(anchor => {

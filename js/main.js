@@ -108,3 +108,47 @@ if (menuToggle && navEl) {
         }
     });
 }
+
+// Gallery lightbox
+const galleryImages = document.querySelectorAll('.gallery-item img');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = lightbox ? lightbox.querySelector('.lightbox-image') : null;
+const lightboxClose = lightbox ? lightbox.querySelector('.lightbox-close') : null;
+
+if (galleryImages && lightbox && lightboxImg) {
+    galleryImages.forEach(img => {
+        img.addEventListener('click', () => {
+            lightboxImg.src = img.src;
+            lightbox.classList.add('open');
+            lightbox.setAttribute('aria-hidden', 'false');
+        });
+    });
+    const closeFn = () => {
+        lightbox.classList.remove('open');
+        lightbox.setAttribute('aria-hidden', 'true');
+        if (lightboxImg) lightboxImg.src = '';
+    };
+    if (lightboxClose) lightboxClose.addEventListener('click', closeFn);
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) closeFn();
+    });
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightbox.classList.contains('open')) closeFn();
+    });
+}
+
+// Franchise language toggle
+const langToggle = document.getElementById('lang-toggle');
+const frBlocks = document.querySelectorAll('.fr-content');
+if (langToggle && frBlocks.length) {
+    langToggle.querySelectorAll('a[data-lang]').forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const lang = link.getAttribute('data-lang');
+            frBlocks.forEach(b => {
+                const isTarget = b.getAttribute('data-lang') === lang;
+                b.style.display = isTarget ? 'block' : 'none';
+            });
+        });
+    });
+}

@@ -655,6 +655,21 @@ footer {
     margin-bottom: 12px;
 }
 
+.footer-links-primary,
+.footer-links-secondary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.footer-links-secondary {
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+}
+
 .footer-links a {
     font-weight: 600;
     display: inline-flex;

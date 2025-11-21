@@ -95,6 +95,32 @@ document.addEventListener('DOMContentLoaded', function () {
         sections.appendChild(wrap);
         footerEl.appendChild(sections);
 
+        // Rebuild quick links rows: remove Contact and split Discounts/Franchise
+        var allLinks = Array.from(footerLinks.querySelectorAll('a'));
+        // Remove Contact
+        allLinks.forEach(function(a){
+            if ((a.textContent || '').trim() === 'Contact') a.remove();
+        });
+        // Collect again after removal
+        allLinks = Array.from(footerLinks.querySelectorAll('a'));
+        var primaryRow = document.createElement('div');
+        primaryRow.className = 'footer-links-primary';
+        var secondaryRow = document.createElement('div');
+        secondaryRow.className = 'footer-links-secondary';
+        // Move anchors into rows preserving icons
+        allLinks.forEach(function(a){
+            var text = (a.textContent || '').trim();
+            if (text === 'Discounts' || text === 'Franchise') {
+                secondaryRow.appendChild(a);
+            } else {
+                primaryRow.appendChild(a);
+            }
+        });
+        // Clear original and append rows
+        footerLinks.innerHTML = '';
+        footerLinks.appendChild(primaryRow);
+        footerLinks.appendChild(secondaryRow);
+
         var note = footerEl.querySelector('.note');
         if (note) {
             footerEl.appendChild(note);

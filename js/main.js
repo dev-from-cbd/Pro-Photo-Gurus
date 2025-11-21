@@ -49,8 +49,9 @@ document.addEventListener('DOMContentLoaded', function () {
         if (li) li.remove();
     });
 
-    var footer = document.querySelector('footer .footer-links');
-    if (footer) {
+    var footerLinks = document.querySelector('footer .footer-links');
+    var footerEl = document.querySelector('footer');
+    if (footerLinks && footerEl) {
         var path = location.pathname;
         var isRoot = /\/index\.html$|\/$/.test(path);
         var isRealEstate = /\/real-estate\//.test(path);
@@ -76,15 +77,36 @@ document.addEventListener('DOMContentLoaded', function () {
             ['Real Estate', 'real-estate/']
         ];
 
+        var sections = document.createElement('div');
+        sections.className = 'footer-sections';
+
         var wrap = document.createElement('div');
         wrap.className = 'footer-services';
+        var title = document.createElement('h4');
+        title.textContent = 'Services';
+        wrap.appendChild(title);
         services.forEach(function (item) {
             var a = document.createElement('a');
             a.href = base ? base + '/' + item[1] : item[1];
             a.textContent = item[0];
             wrap.appendChild(a);
         });
-        footer.appendChild(wrap);
+
+        var contact = document.createElement('div');
+        contact.className = 'footer-contact';
+        var ctitle = document.createElement('h4');
+        ctitle.textContent = 'Contact';
+        var email = document.createElement('p');
+        var link = document.createElement('a');
+        link.href = 'mailto:veryfatwombat@gmail.com';
+        link.textContent = 'veryfatwombat@gmail.com';
+        email.appendChild(link);
+        contact.appendChild(ctitle);
+        contact.appendChild(email);
+
+        sections.appendChild(wrap);
+        sections.appendChild(contact);
+        footerEl.appendChild(sections);
     }
 });
 

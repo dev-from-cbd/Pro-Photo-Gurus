@@ -676,6 +676,46 @@ footer a:focus {
     outline: none;
 }
 
+.footer-sections {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 10px;
+}
+
+footer h4 {
+    margin: 6px 0 8px;
+    font-size: 1.05rem;
+    color: #ffd166;
+}
+
+.footer-services {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(180px, 1fr));
+    gap: 10px 18px;
+}
+
+.footer-services a {
+    display: block;
+    text-decoration: underline;
+}
+
+.footer-contact p a {
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .footer-sections {
+        grid-template-columns: 1fr;
+    }
+    .footer-services {
+        grid-template-columns: repeat(2, minmax(160px, 1fr));
+    }
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .hero-content h1 {

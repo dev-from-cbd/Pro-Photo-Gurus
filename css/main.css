@@ -853,3 +853,16 @@ footer a:focus {
     cursor: pointer;
     box-shadow: 0 10px 24px rgba(0,0,0,0.25);
 }
+
+.footer-services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 6px;
+}
+
+.footer-services a {
+    font-weight: 500;
+}

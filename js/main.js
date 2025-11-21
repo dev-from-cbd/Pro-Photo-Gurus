@@ -43,6 +43,51 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('nav ul li a[href$="real-estate/"]').forEach(function (a) {
+        var li = a.closest('li');
+        if (li) li.remove();
+    });
+
+    var footer = document.querySelector('footer .footer-links');
+    if (footer) {
+        var path = location.pathname;
+        var isRoot = /\/index\.html$|\/$/.test(path);
+        var isRealEstate = /\/real-estate\//.test(path);
+        var isService = /\/services\//.test(path);
+        var base = '';
+        if (!isRoot) {
+            if (isRealEstate) base = '..';
+            else if (isService) base = '../..';
+        }
+
+        var services = [
+            ['Portraits & Headshots', 'services/portraits/'],
+            ['Love Story & Pre‑Wedding', 'services/love-story/'],
+            ['Families & Kids', 'services/families-kids/'],
+            ['Branding & Social', 'services/branding-social/'],
+            ['Products & Advertising', 'services/products-advertising/'],
+            ['Retouching & Post‑production', 'services/retouching/'],
+            ['Events & Lifestyle', 'services/events-lifestyle/'],
+            ['Pets', 'services/pets/'],
+            ['Corporate Teams', 'services/corporate-teams/'],
+            ['Studio Portraits', 'services/studio-portraits/'],
+            ['Fashion & Editorial', 'services/fashion-editorial/'],
+            ['Real Estate', 'real-estate/']
+        ];
+
+        var wrap = document.createElement('div');
+        wrap.className = 'footer-services';
+        services.forEach(function (item) {
+            var a = document.createElement('a');
+            a.href = base ? base + '/' + item[1] : item[1];
+            a.textContent = item[0];
+            wrap.appendChild(a);
+        });
+        footer.appendChild(wrap);
+    }
+});
+
 // Add scroll effect to navigation
 window.addEventListener('scroll', function () {
     const nav = document.querySelector('nav');

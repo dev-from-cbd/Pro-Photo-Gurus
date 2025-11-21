@@ -107,6 +107,9 @@ document.addEventListener('DOMContentLoaded', function () {
         primaryRow.className = 'footer-links-primary';
         var secondaryRow = document.createElement('div');
         secondaryRow.className = 'footer-links-secondary';
+        var secTitle = document.createElement('h4');
+        secTitle.textContent = 'More';
+        secondaryRow.appendChild(secTitle);
         // Move anchors into rows preserving icons
         allLinks.forEach(function(a){
             var text = (a.textContent || '').trim();

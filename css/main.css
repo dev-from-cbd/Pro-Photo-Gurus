@@ -670,6 +670,33 @@ footer {
     border-top: 1px solid rgba(255,255,255,0.15);
 }
 
+.footer-links-primary a,
+.footer-links-secondary a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-links-secondary h4 {
+    width: 100%;
+    text-align: center;
+    margin: 0 0 6px;
+    color: #ffd166;
+}
+
+.footer-links-secondary a {
+    text-decoration: none;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 999px;
+    padding: 6px 12px;
+}
+
+.footer-links-secondary a:hover,
+.footer-links-secondary a:focus {
+    background: rgba(255,255,255,0.14);
+}
+
 .footer-links a {
     font-weight: 600;
     display: inline-flex;

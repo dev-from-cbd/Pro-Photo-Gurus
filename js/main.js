@@ -92,20 +92,7 @@ document.addEventListener('DOMContentLoaded', function () {
             wrap.appendChild(a);
         });
 
-        var contact = document.createElement('div');
-        contact.className = 'footer-contact';
-        var ctitle = document.createElement('h4');
-        ctitle.textContent = 'Contact';
-        var email = document.createElement('p');
-        var link = document.createElement('a');
-        link.href = 'mailto:veryfatwombat@gmail.com';
-        link.textContent = 'veryfatwombat@gmail.com';
-        email.appendChild(link);
-        contact.appendChild(ctitle);
-        contact.appendChild(email);
-
         sections.appendChild(wrap);
-        sections.appendChild(contact);
         footerEl.appendChild(sections);
 
         var note = footerEl.querySelector('.note');

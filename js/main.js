@@ -56,10 +56,12 @@ document.addEventListener('DOMContentLoaded', function () {
         var isRoot = /\/index\.html$|\/$/.test(path);
         var isRealEstate = /\/real-estate\//.test(path);
         var isService = /\/services\//.test(path);
+        var isDiscounts = /\/discounts\//.test(path);
+        var isFranchise = /\/franchise\//.test(path);
         var base = '';
         if (!isRoot) {
-            if (isRealEstate) base = '..';
-            else if (isService) base = '../..';
+            if (isService) base = '../..';
+            else if (isRealEstate || isDiscounts || isFranchise) base = '..';
         }
 
         var services = [
@@ -120,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var hasGallery = allLinks.some(function(a){ return (a.textContent||'').trim() === 'Gallery'; });
         if (!hasGallery) {
             var gallery = document.createElement('a');
-            gallery.href = isRoot ? '#gallery' : (isRealEstate ? '../index.html#gallery' : (isService ? '../../index.html#gallery' : '#gallery'));
+            gallery.href = isRoot ? '#gallery' : (isService ? '../../index.html#gallery' : (isRealEstate || isDiscounts || isFranchise ? '../index.html#gallery' : '#gallery'));
             gallery.innerHTML = '<svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="M10 9l2 3 3-4 4 6H5z" /></svg> Gallery';
             primaryRow.appendChild(gallery);
         }

@@ -107,6 +107,11 @@ document.addEventListener('DOMContentLoaded', function () {
         sections.appendChild(wrap);
         sections.appendChild(contact);
         footerEl.appendChild(sections);
+
+        var note = footerEl.querySelector('.note');
+        if (note) {
+            footerEl.appendChild(note);
+        }
     }
 });
 

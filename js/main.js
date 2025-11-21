@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Rebuild quick links rows: remove Contact and split Discounts/Franchise
         var allLinks = Array.from(footerLinks.querySelectorAll('a'));
         // Remove Contact
-        allLinks.forEach(function(a){
+        allLinks.forEach(function (a) {
             if ((a.textContent || '').trim() === 'Contact') a.remove();
         });
         // Collect again after removal
@@ -107,11 +107,8 @@ document.addEventListener('DOMContentLoaded', function () {
         primaryRow.className = 'footer-links-primary';
         var secondaryRow = document.createElement('div');
         secondaryRow.className = 'footer-links-secondary';
-        var secTitle = document.createElement('h4');
-        secTitle.textContent = 'More';
-        secondaryRow.appendChild(secTitle);
         // Move anchors into rows preserving icons
-        allLinks.forEach(function(a){
+        allLinks.forEach(function (a) {
             var text = (a.textContent || '').trim();
             if (text === 'Discounts' || text === 'Franchise') {
                 secondaryRow.appendChild(a);

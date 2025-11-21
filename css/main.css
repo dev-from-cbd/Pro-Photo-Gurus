@@ -321,6 +321,30 @@ nav.open .menu-toggle .bar:nth-child(3) {
     margin: 0 auto;
 }
 
+.section-bridge {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.bridge-inner {
+    max-width: 880px;
+}
+
+.bridge-inner p {
+    font-size: 1.1rem;
+    color: #4a4a4a;
+}
+
+.cta-row {
+    margin-top: 18px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
 .section h2 {
     font-size: 2.5rem;
     color: #2c3e50;

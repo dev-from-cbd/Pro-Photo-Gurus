@@ -396,6 +396,37 @@ nav.open .menu-toggle .bar:nth-child(3) {
     line-height: 1.6;
 }
 
+.back-to-top {
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+    border: 1px solid rgba(0,0,0,0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent);
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    z-index: 999;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.back-to-top svg {
+    width: 22px;
+    height: 22px;
+}
+
 /* Override for About section paragraphs: classic left-aligned text */
 #about p {
     text-align: left;

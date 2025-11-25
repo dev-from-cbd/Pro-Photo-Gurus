@@ -218,6 +218,11 @@ nav.open .menu-toggle .bar:nth-child(3) {
     justify-content: center;
 }
 
+.onlyfans-page .parallax {
+    height: 78vh;
+    background-position: center 28%;
+}
+
 .parallax::before {
     content: '';
     position: absolute;
@@ -1003,6 +1008,10 @@ footer h4 {
     object-fit: cover;
     display: block;
     transition: transform 240ms ease, opacity 240ms ease;
+}
+
+.onlyfans-page .gallery-item img {
+    object-position: center 30%;
 }
 
 .gallery-item:hover img {

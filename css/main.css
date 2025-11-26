@@ -240,6 +240,10 @@ nav + .parallax {
     z-index: 1;
 }
 
+.parallax.no-overlay::before {
+    background: none;
+}
+
 /* No overlay for discounts hero — keep image clear */
 .discounts-hero::before {
     background: none;

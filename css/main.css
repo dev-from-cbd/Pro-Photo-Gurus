@@ -219,7 +219,6 @@ nav.open .menu-toggle .bar:nth-child(3) {
     overflow: hidden;
 }
 
-/* Compensate fixed nav so hero's top is not hidden */
 nav + .parallax {
     margin-top: 70px;
 }
@@ -1093,4 +1092,23 @@ footer h4 {
 
 .footer-services a {
     font-weight: 500;
+}
+.portraits-page #home.parallax {
+    height: 96vh;
+}
+
+.portraits-page .section:first-of-type {
+    padding-top: 24px;
+}
+
+@media (max-width: 768px) {
+    .portraits-page #home.parallax {
+        height: 82vh;
+    }
+}
+
+@media (max-width: 420px) {
+    .portraits-page #home.parallax {
+        height: 74vh;
+    }
 }

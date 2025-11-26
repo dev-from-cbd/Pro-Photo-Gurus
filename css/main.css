@@ -207,7 +207,7 @@ nav.open .menu-toggle .bar:nth-child(3) {
 
 /* Parallax Sections */
 .parallax {
-    height: 72vh;
+    height: 86vh;
     background-attachment: fixed;
     background-position: center top;
     background-repeat: no-repeat;
@@ -216,6 +216,11 @@ nav.open .menu-toggle .bar:nth-child(3) {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* Compensate fixed nav so hero's top is not hidden */
+nav + .parallax {
+    margin-top: 70px;
 }
 
 .onlyfans-page .parallax {
@@ -904,7 +909,7 @@ footer h4 {
 
     /* Slightly reduce parallax section height on mobile to avoid long empty gaps */
     .parallax {
-        height: 60vh;
+        height: 70vh;
         background-attachment: scroll;
         background-position: center top;
     }

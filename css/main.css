@@ -207,11 +207,11 @@ nav.open .menu-toggle .bar:nth-child(3) {
 
 /* Parallax Sections */
 .parallax {
-    height: 72vh;
+    height: 82vh;
     background-attachment: fixed;
-    background-position: center 30%;
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     position: relative;
     display: flex;
     align-items: center;
@@ -904,7 +904,8 @@ footer h4 {
 
     /* Slightly reduce parallax section height on mobile to avoid long empty gaps */
     .parallax {
-        height: 60vh;
+        height: 70vh;
+        background-attachment: scroll;
     }
 
     .parallax-content h2 {
@@ -969,7 +970,8 @@ footer h4 {
 
 @media (max-width: 420px) {
     .parallax {
-        height: 36vh;
+        height: 48vh;
+        background-attachment: scroll;
     }
 
     .discounts-hero .parallax-content h2 {

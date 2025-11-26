@@ -216,6 +216,7 @@ nav.open .menu-toggle .bar:nth-child(3) {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 /* Compensate fixed nav so hero's top is not hidden */
@@ -236,6 +237,7 @@ nav + .parallax {
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
 }
 
 /* No overlay for discounts hero — keep image clear */
@@ -1017,6 +1019,17 @@ footer h4 {
     object-fit: contain;
     display: block;
     transition: transform 240ms ease, opacity 240ms ease;
+}
+
+/* Ensure hero image aligns to the very top without cropping it */
+.parallax > img.hero-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    z-index: 0;
 }
 
 .onlyfans-page .gallery-item img {

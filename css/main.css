@@ -207,11 +207,11 @@ nav.open .menu-toggle .bar:nth-child(3) {
 
 /* Parallax Sections */
 .parallax {
-    height: 82vh;
+    height: 72vh;
     background-attachment: fixed;
-    background-position: center center;
+    background-position: center top;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     position: relative;
     display: flex;
     align-items: center;
@@ -220,7 +220,7 @@ nav.open .menu-toggle .bar:nth-child(3) {
 
 .onlyfans-page .parallax {
     height: 78vh;
-    background-position: center 28%;
+    background-position: top center;
 }
 
 .parallax::before {
@@ -904,8 +904,9 @@ footer h4 {
 
     /* Slightly reduce parallax section height on mobile to avoid long empty gaps */
     .parallax {
-        height: 70vh;
+        height: 60vh;
         background-attachment: scroll;
+        background-position: center top;
     }
 
     .parallax-content h2 {
@@ -970,8 +971,9 @@ footer h4 {
 
 @media (max-width: 420px) {
     .parallax {
-        height: 48vh;
+        height: 42vh;
         background-attachment: scroll;
+        background-position: center top;
     }
 
     .discounts-hero .parallax-content h2 {

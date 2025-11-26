@@ -44,7 +44,7 @@ document.querySelectorAll('nav a').forEach(anchor => {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('nav ul li a[href$="real-estate/"]').forEach(function (a) {
+    document.querySelectorAll('nav ul li a[href$="services/real-estate/"]').forEach(function (a) {
         var li = a.closest('li');
         if (li) li.remove();
     });
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (footerLinks && footerEl) {
         var path = location.pathname;
         var isRoot = /\/index\.html$|\/$/.test(path);
-        var isRealEstate = /\/real-estate\//.test(path);
+        var isRealEstate = /\/services\/real-estate\//.test(path);
         var isService = /\/services\//.test(path);
         var isDiscounts = /\/discounts\//.test(path);
         var isFranchise = /\/franchise\//.test(path);
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
             ['Corporate Teams', 'services/corporate-teams/'],
             ['Studio Portraits', 'services/studio-portraits/'],
             ['Fashion & Editorial', 'services/fashion-editorial/'],
-            ['Real Estate', 'real-estate/']
+            ['Real Estate', 'services/real-estate/']
         ];
 
         var sections = document.createElement('div');

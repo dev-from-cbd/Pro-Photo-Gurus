@@ -219,7 +219,7 @@ nav.open .menu-toggle .bar:nth-child(3) {
     overflow: hidden;
 }
 
-nav + .parallax {
+nav+.parallax {
     margin-top: 70px;
 }
 
@@ -385,30 +385,36 @@ nav + .parallax {
 }
 
 .process-step {
-    background: #fff;
+    background: #f9fafb;
     border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
     padding: 22px;
     text-align: center;
+    cursor: default;
 }
 
 .process-step .step-icon {
     width: 40px;
     height: 40px;
     margin: 0 auto 8px;
-    color: var(--accent);
+    color: #6b7280;
 }
 
 .process-step h3 {
-    font-size: 1.15rem;
-    color: #2c3e50;
+    font-size: 1.12rem;
+    color: #1f2937;
     margin: 6px 0 8px;
 }
 
 .process-step p {
     font-size: 0.98rem;
-    color: #4a4a4a;
+    color: #485056;
     line-height: 1.6;
+}
+
+.process-step:hover {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
 }
 
 .back-to-top {
@@ -419,8 +425,8 @@ nav + .parallax {
     height: 44px;
     border-radius: 50%;
     background: #ffffff;
-    box-shadow: 0 10px 24px rgba(0,0,0,0.15);
-    border: 1px solid rgba(0,0,0,0.08);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.08);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -748,7 +754,7 @@ footer {
 .footer-links-secondary {
     margin-top: 0;
     padding-top: 12px;
-    border-top: 1px solid rgba(255,255,255,0.15);
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .footer-links-primary a,
@@ -767,28 +773,28 @@ footer {
 
 .footer-links-secondary a {
     text-decoration: none;
-    background: rgba(255,255,255,0.08);
-    border: 1px solid rgba(255,255,255,0.18);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 999px;
     padding: 6px 12px;
 }
 
 .footer-links-secondary a:hover,
 .footer-links-secondary a:focus {
-    background: rgba(255,255,255,0.14);
+    background: rgba(255, 255, 255, 0.14);
 }
 
 .footer-links-primary a {
     text-decoration: none;
-    background: rgba(255,255,255,0.08);
-    border: 1px solid rgba(255,255,255,0.18);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 999px;
     padding: 6px 12px;
 }
 
 .footer-links-primary a:hover,
 .footer-links-primary a:focus {
-    background: rgba(255,255,255,0.14);
+    background: rgba(255, 255, 255, 0.14);
 }
 
 .footer-links a {
@@ -816,9 +822,9 @@ footer a:focus {
     max-width: 1200px;
     margin: 12px auto 0;
     padding-top: 12px;
-    border-top: 1px solid rgba(255,255,255,0.15);
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
     padding-bottom: 12px;
-    border-bottom: 1px solid rgba(255,255,255,0.15);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     margin-bottom: 12px;
 }
 
@@ -839,15 +845,15 @@ footer h4 {
     align-items: center;
     gap: 8px;
     text-decoration: none;
-    background: rgba(255,255,255,0.08);
-    border: 1px solid rgba(255,255,255,0.18);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 999px;
     padding: 6px 12px;
 }
 
 .footer-services a:hover,
 .footer-services a:focus {
-    background: rgba(255,255,255,0.14);
+    background: rgba(255, 255, 255, 0.14);
 }
 
 .footer-contact p a {
@@ -1013,7 +1019,7 @@ footer h4 {
     position: relative;
     overflow: hidden;
     border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
 }
 
 .gallery-item img {
@@ -1025,7 +1031,7 @@ footer h4 {
 }
 
 /* Ensure hero image aligns to the very top without cropping it */
-.parallax > img.hero-img {
+.parallax>img.hero-img {
     position: absolute;
     inset: 0;
     width: 100%;
@@ -1047,7 +1053,7 @@ footer h4 {
 .lightbox {
     position: fixed;
     inset: 0;
-    background: rgba(0,0,0,0.85);
+    background: rgba(0, 0, 0, 0.85);
     display: none;
     align-items: center;
     justify-content: center;
@@ -1063,7 +1069,7 @@ footer h4 {
     max-width: 92vw;
     max-height: 86vh;
     border-radius: 12px;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
 }
 
 .lightbox-close {
@@ -1078,7 +1084,7 @@ footer h4 {
     height: 40px;
     font-size: 1.1rem;
     cursor: pointer;
-    box-shadow: 0 10px 24px rgba(0,0,0,0.25);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
 }
 
 .footer-services {
@@ -1093,6 +1099,7 @@ footer h4 {
 .footer-services a {
     font-weight: 500;
 }
+
 .portraits-page #home.parallax {
     height: 96vh;
 }

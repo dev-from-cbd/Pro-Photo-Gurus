@@ -1039,7 +1039,7 @@ footer h4 {
 }
 
 .portraits-page .slide {
-    background-position: center 32%;
+    background-position: top center;
 }
 
 /* Ensure hero image aligns to the very top without cropping it */

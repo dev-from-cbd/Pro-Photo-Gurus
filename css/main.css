@@ -227,6 +227,10 @@ nav+.header {
     margin-top: 70px;
 }
 
+.portraits-page nav+.header {
+    margin-top: 0;
+}
+
 .onlyfans-page .parallax {
     height: 78vh;
     background-position: top center;
@@ -1035,7 +1039,7 @@ footer h4 {
 }
 
 .portraits-page .slide {
-    background-position: top center;
+    background-position: center 32%;
 }
 
 /* Ensure hero image aligns to the very top without cropping it */

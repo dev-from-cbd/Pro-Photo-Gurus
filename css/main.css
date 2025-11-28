@@ -1152,3 +1152,24 @@ footer h4 {
         font-size: 1.1rem;
     }
 }
+
+@media (min-width: 1024px) {
+    .home-page .hero-content {
+        top: auto;
+        left: 6vw;
+        bottom: 8vh;
+        right: auto;
+        transform: none;
+        text-align: left;
+        padding: 20px 28px;
+        max-width: 580px;
+    }
+
+    .home-page .hero-content h1 {
+        font-size: 3.1rem;
+    }
+
+    .home-page .hero-content p {
+        font-size: 1.1rem;
+    }
+}

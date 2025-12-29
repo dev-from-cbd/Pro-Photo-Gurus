@@ -1034,10 +1034,27 @@ footer h4 {
 
 /* Gallery */
 .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 18px;
+    column-count: 3;
+    column-gap: 18px;
     margin-top: 30px;
+}
+
+@media (min-width: 1200px) {
+    .gallery-grid {
+        column-count: 4;
+    }
+}
+
+@media (max-width: 900px) {
+    .gallery-grid {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 520px) {
+    .gallery-grid {
+        column-count: 1;
+    }
 }
 
 .gallery-item {
@@ -1045,12 +1062,15 @@ footer h4 {
     overflow: hidden;
     border-radius: 12px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 18px;
+    break-inside: avoid;
 }
 
 .gallery-item img {
     width: 100%;
     height: auto;
-    object-fit: contain;
     display: block;
     transition: transform 240ms ease, opacity 240ms ease;
 }

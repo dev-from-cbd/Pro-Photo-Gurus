@@ -1,674 +1,734 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Declare HTML5 document type -->
+<html lang="en"> <!-- Root HTML element with English language set -->
+<!-- Empty line for readability -->
 
-<head>
-    <!-- Google tag (gtag.js) -->
-
-    <!-- font awesome cdn link  -->
+<head> <!-- Document head: metadata, title, links -->
+    <!-- Google tag (gtag.js) --> <!-- Placeholder for Google Analytics script -->
+    <!-- font awesome cdn link  --> <!-- Note about loading Font Awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Load Font Awesome stylesheet from CDN -->
+    <!-- Empty line for readability -->
+    <meta charset="UTF-8"> <!-- Set character encoding to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Enable responsive layout on mobile -->
     <meta name="description"
         content="Pro Photo Gurus: portraits, families, love stories, LinkedIn headshots, branding & social content, products/advertising, events and pets — plus a dedicated Real Estate section. Adelaide.">
+    <!-- SEO description of the site -->
+    <!-- Empty line for readability -->
+    <title>Pro Photo Gurus – Professional Photography Services in Adelaide</title> <!-- Browser tab title -->
+    <!-- Empty line for readability -->
+    <link rel="stylesheet" href="css/main.css"> <!-- Main site stylesheet -->
+    <!-- Empty line for readability -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" /> <!-- Favicon (shortcut icon) -->
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" /> <!-- Favicon (standard icon) -->
+</head> <!-- End of document head -->
+<!-- Empty line for readability -->
 
-    <title>Pro Photo Gurus – Professional Photography Services in Adelaide</title>
-
-    <link rel="stylesheet" href="css/main.css">
-
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
-    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
-</head>
-
-<body class="home-page">
-    <!-- Navigation -->
-    <nav>
+<body class="home-page"> <!-- Body start with homepage styling class -->
+    <!-- Navigation --> <!-- Section label for the main navigation -->
+    <nav> <!-- Navigation bar -->
         <a href="https://dev-from-cbd.github.io/Pro-Photo-Gurus/" class="logo-link"><img src="images/logo.png"
-                alt="Pro Photo Gurus Logo" class="logo"></a>
+                alt="Pro Photo Gurus Logo" class="logo"></a> <!-- Logo linking to homepage -->
         <a href="https://dev-from-cbd.github.io/Pro-Photo-Gurus/" class="brand-name">Pro Photo Gurus</a>
-        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </button>
-        <ul>
-            <li><a href="#home">
+        <!-- Brand name link -->
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false"> <!-- Mobile menu toggle button -->
+            <span class="bar"></span> <!-- Hamburger bar 1 -->
+            <span class="bar"></span> <!-- Hamburger bar 2 -->
+            <span class="bar"></span> <!-- Hamburger bar 3 -->
+        </button> <!-- End toggle button -->
+        <ul> <!-- Navigation links list -->
+            <li><a href="#home"> <!-- Link to header section -->
                     <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <path d="M3 11l9-8 9 8" />
-                        <path d="M5 10v10h14V10" />
-                        <path d="M10 21v-6h4v6" />
-                    </svg>
-                    Home
-                </a></li>
-            <li><a href="real-estate/">
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"> <!-- Home icon SVG -->
+                        <path d="M3 11l9-8 9 8" /> <!-- Roof shape -->
+                        <path d="M5 10v10h14V10" /> <!-- House outline -->
+                        <path d="M10 21v-6h4v6" /> <!-- Door -->
+                    </svg> <!-- End home icon -->
+                    Home <!-- Label for home link -->
+                </a></li> <!-- End home nav item -->
+            <li><a href="real-estate/"> <!-- Link to Real Estate page -->
                     <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <rect x="3" y="7" width="18" height="13" rx="2" />
-                        <path d="M8 7V5h8v2" />
-                    </svg>
-                    Real Estate
-                </a></li>
-            <li><a href="#services">
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"> <!-- Monitor icon SVG -->
+                        <rect x="3" y="7" width="18" height="13" rx="2" /> <!-- Screen -->
+                        <path d="M8 7V5h8v2" /> <!-- Top bar -->
+                    </svg> <!-- End icon -->
+                    Real Estate <!-- Label for real estate link -->
+                </a></li> <!-- End real estate nav item -->
+            <li><a href="#services"> <!-- Link to services section -->
                     <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <rect x="3" y="7" width="18" height="13" rx="2" />
-                        <path d="M8 7V5h8v2" />
-                    </svg>
-                    Services
-                </a></li>
-            <li><a href="#about">
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"> <!-- Monitor icon SVG -->
+                        <rect x="3" y="7" width="18" height="13" rx="2" /> <!-- Screen -->
+                        <path d="M8 7V5h8v2" /> <!-- Top bar -->
+                    </svg> <!-- End icon -->
+                    Services <!-- Label for services link -->
+                </a></li> <!-- End services nav item -->
+            <li><a href="#about"> <!-- Link to about section -->
                     <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <circle cx="12" cy="12" r="10" />
-                        <path d="M12 16v-4" />
-                        <path d="M12 8h.01" />
-                    </svg>
-                    About
-                </a></li>
-            <li><a href="#pricing">
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"> <!-- Info icon SVG -->
+                        <circle cx="12" cy="12" r="10" /> <!-- Outer circle -->
+                        <path d="M12 16v-4" /> <!-- Vertical line -->
+                        <path d="M12 8h.01" /> <!-- Dot -->
+                    </svg> <!-- End icon -->
+                    About <!-- Label for about link -->
+                </a></li> <!-- End about nav item -->
+            <li><a href="#pricing"> <!-- Link to pricing section -->
                     <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <path d="M3 12l9-9h6l3 3v6l-9 9-9-9z" />
-                        <path d="M15 6h.01" />
-                    </svg>
-                    Pricing
-                </a></li>
-            <li><a href="#testimonials">
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"> <!-- Tag icon SVG -->
+                        <path d="M3 12l9-9h6l3 3v6l-9 9-9-9z" /> <!-- Tag outline -->
+                        <path d="M15 6h.01" /> <!-- Tag hole -->
+                    </svg> <!-- End icon -->
+                    Pricing <!-- Label for pricing link -->
+                </a></li> <!-- End pricing nav item -->
+            <li><a href="#testimonials"> <!-- Link to testimonials section -->
                     <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"> <!-- Star icon SVG -->
                         <path d="M12 17.3L18.2 21l-1.6-7L22 9.2l-7.2-.6L12 2 9.2 8.6 2 9.2l5.5 4.7L5.8 21z" />
-                    </svg>
-                    Reviews
-                </a></li>
-            <li><a href="gallery/">
+                        <!-- Star shape -->
+                    </svg> <!-- End icon -->
+                    Reviews <!-- Label for reviews link -->
+                </a></li> <!-- End reviews nav item -->
+            <li><a href="gallery/"> <!-- Link to gallery page -->
                     <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <rect x="3" y="5" width="18" height="14" rx="2" />
-                        <path d="M10 9l2 3 3-4 4 6H5z" />
-                    </svg>
-                    Gallery
-                </a></li>
-            <li><a href="#contact">
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"> <!-- Image icon SVG -->
+                        <rect x="3" y="5" width="18" height="14" rx="2" /> <!-- Frame -->
+                        <path d="M10 9l2 3 3-4 4 6H5z" /> <!-- Mountains line -->
+                    </svg> <!-- End icon -->
+                    Gallery <!-- Label for gallery link -->
+                </a></li> <!-- End gallery nav item -->
+            <li><a href="#contact"> <!-- Link to contact section -->
                     <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <rect x="3" y="5" width="18" height="14" rx="2" />
-                        <path d="M3 7l9 6 9-6" />
-                    </svg>
-                    Contact
-                </a></li>
-        </ul>
-    </nav>
-
-    <!-- Header with slider -->
-    <header id="home" class="header">
-        <div class="slider">
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"> <!-- Mail icon SVG -->
+                        <rect x="3" y="5" width="18" height="14" rx="2" /> <!-- Envelope -->
+                        <path d="M3 7l9 6 9-6" /> <!-- Envelope flap -->
+                    </svg> <!-- End icon -->
+                    Contact <!-- Label for contact link -->
+                </a></li> <!-- End contact nav item -->
+        </ul> <!-- End navigation list -->
+    </nav> <!-- End navigation bar -->
+    <!-- Empty line for readability -->
+    <!-- Header with slider --> <!-- Section label for header carousel -->
+    <header id="home" class="header"> <!-- Header section anchor -->
+        <div class="slider"> <!-- Slider container -->
             <div class="slide active" style="background-image: url('images/backgrounds/background1.png')"></div>
+            <!-- Slide 1 (active) -->
             <div class="slide" style="background-image: url('images/backgrounds/background2.png')"></div>
+            <!-- Slide 2 -->
             <div class="slide" style="background-image: url('images/backgrounds/background3.png')"></div>
+            <!-- Slide 3 -->
             <div class="slide" style="background-image: url('images/backgrounds/background4.png')"></div>
+            <!-- Slide 4 -->
             <div class="slide" style="background-image: url('images/backgrounds/background5.png')"></div>
+            <!-- Slide 5 -->
             <div class="slide" style="background-image: url('images/backgrounds/background6.png')"></div>
+            <!-- Slide 6 -->
             <div class="slide" style="background-image: url('images/backgrounds/background7.png')"></div>
+            <!-- Slide 7 -->
             <div class="slide" style="background-image: url('images/backgrounds/background8.png')"></div>
+            <!-- Slide 8 -->
             <div class="slide" style="background-image: url('images/backgrounds/background9.png')"></div>
+            <!-- Slide 9 -->
             <div class="slide" style="background-image: url('images/backgrounds/background10.png')"></div>
+            <!-- Slide 10 -->
             <div class="slide" style="background-image: url('images/backgrounds/background11.png')"></div>
+            <!-- Slide 11 -->
             <div class="slide" style="background-image: url('images/backgrounds/background12.png')"></div>
-        </div>
-        <div class="hero-content">
-            <h1>Pro Photo Gurus</h1>
-            <p>Portrait, Lifestyle, Events & Commercial Photography in Adelaide</p>
-        </div>
-    </header>
-
-    <!-- Services Section -->
-    <section id="services" class="section">
-        <h2>Photography for People & Business</h2>
+            <!-- Slide 12 -->
+        </div> <!-- End slider container -->
+        <div class="hero-content"> <!-- Overlay hero content -->
+            <h1>Pro Photo Gurus</h1> <!-- Main heading -->
+            <p>Portrait, Lifestyle, Events & Commercial Photography in Adelaide</p> <!-- Subheading -->
+        </div> <!-- End hero content -->
+    </header> <!-- End header -->
+    <!-- Empty line for readability -->
+    <!-- Services Section --> <!-- Section label for services -->
+    <section id="services" class="section"> <!-- Services section start -->
+        <h2>Photography for People & Business</h2> <!-- Services heading -->
         <p>A versatile city photographer: portraits, families, love stories, business headshots, social content,
-            products/advertising, events and pets.</p>
-        <div class="services-grid">
+            products/advertising, events and pets.</p> <!-- Short services overview -->
+        <div class="services-grid"> <!-- Grid of service cards -->
             <div class="service-card"><a class="service-card-link" href="services/portraits/">
-                    <div class="service-header">
+                    <!-- Portraits card link -->
+                    <div class="service-header"> <!-- Card header with icon and title -->
                         <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <circle cx="12" cy="12" r="5" />
-                            <path d="M2 22c2-4 6-6 10-6s8 2 10 6" />
-                        </svg>
-                        <h3>Portraits & Headshots (LinkedIn)</h3>
-                    </div>
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"> <!-- User icon SVG -->
+                            <circle cx="12" cy="12" r="5" /> <!-- Head circle -->
+                            <path d="M2 22c2-4 6-6 10-6s8 2 10 6" /> <!-- Shoulders/base -->
+                        </svg> <!-- End icon -->
+                        <h3>Portraits & Headshots (LinkedIn)</h3> <!-- Card title -->
+                    </div> <!-- End card header -->
                     <p>Professional business portraits and creative headshots for profiles and websites.</p>
-                </a></div>
+                    <!-- Card description -->
+                </a></div> <!-- End card -->
             <div class="service-card"><a class="service-card-link" href="services/love-story/">
-                    <div class="service-header">
+                    <!-- Love story card link -->
+                    <div class="service-header"> <!-- Card header -->
                         <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path d="M4 12l4-4 4 4 4-4 4 4" />
-                        </svg>
-                        <h3>Love Story & Pre‑Wedding</h3>
-                    </div>
+                            <!-- Heart wave icon SVG -->
+                            <path d="M4 12l4-4 4 4 4-4 4 4" /> <!-- Decorative path -->
+                        </svg> <!-- End icon -->
+                        <h3>Love Story & Pre‑Wedding</h3> <!-- Card title -->
+                    </div> <!-- End card header -->
                     <p>Tailored pre‑wedding sets with styling, locations and storytelling that fit you.</p>
-                </a></div>
+                    <!-- Card description -->
+                </a></div> <!-- End card -->
             <div class="service-card"><a class="service-card-link" href="services/families-kids/">
-                    <div class="service-header">
+                    <!-- Families card link -->
+                    <div class="service-header"> <!-- Card header -->
                         <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <circle cx="8" cy="10" r="2" />
-                            <path d="M6 20v-4c0-2 2-4 4-4" />
-                            <circle cx="16" cy="12" r="1.6" />
-                            <path d="M14 20v-3c0-2 2-3 4-3" />
-                        </svg>
-                        <h3>Families & Kids</h3>
-                    </div>
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"> <!-- Family icon SVG -->
+                            <circle cx="8" cy="10" r="2" /> <!-- Child head -->
+                            <path d="M6 20v-4c0-2 2-4 4-4" /> <!-- Parent curve -->
+                            <circle cx="16" cy="12" r="1.6" /> <!-- Second child head -->
+                            <path d="M14 20v-3c0-2 2-3 4-3" /> <!-- Second parent curve -->
+                        </svg> <!-- End icon -->
+                        <h3>Families & Kids</h3> <!-- Card title -->
+                    </div> <!-- End card header -->
                     <p>Warm family sessions and kids photography at home, in parks or on the beach.</p>
-                </a></div>
+                    <!-- Card description -->
+                </a></div> <!-- End card -->
             <div class="service-card"><a class="service-card-link" href="services/branding-social/">
-                    <div class="service-header">
+                    <!-- Branding card link -->
+                    <div class="service-header"> <!-- Card header -->
                         <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <rect x="4" y="6" width="16" height="12" rx="2" />
-                            <path d="M8 10h8M8 14h6" />
-                        </svg>
-                        <h3>Branding & Social</h3>
-                    </div>
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"> <!-- Browser icon SVG -->
+                            <rect x="4" y="6" width="16" height="12" rx="2" /> <!-- Screen -->
+                            <path d="M8 10h8M8 14h6" /> <!-- Lines inside screen -->
+                        </svg> <!-- End icon -->
+                        <h3>Branding & Social</h3> <!-- Card title -->
+                    </div> <!-- End card header -->
                     <p>Instagram/TikTok content: cohesive frame series, story packs and creative setups.</p>
-                </a></div>
+                    <!-- Card description -->
+                </a></div> <!-- End card -->
             <div class="service-card"><a class="service-card-link" href="services/products-advertising/">
-                    <div class="service-header">
+                    <!-- Products card link -->
+                    <div class="service-header"> <!-- Card header -->
                         <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <rect x="3" y="7" width="18" height="10" rx="2" />
-                            <path d="M7 10h10" />
-                        </svg>
-                        <h3>Products & Advertising</h3>
-                    </div>
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"> <!-- Display icon SVG -->
+                            <rect x="3" y="7" width="18" height="10" rx="2" /> <!-- Screen rectangle -->
+                            <path d="M7 10h10" /> <!-- Horizontal line -->
+                        </svg> <!-- End icon -->
+                        <h3>Products & Advertising</h3> <!-- Card title -->
+                    </div> <!-- End card header -->
                     <p>Catalog and advertising photography for products/services; assets for landing pages and banners.
-                    </p>
-                </a></div>
+                    </p> <!-- Card description -->
+                </a></div> <!-- End card -->
             <div class="service-card"><a class="service-card-link" href="services/retouching/">
-                    <div class="service-header">
+                    <!-- Retouching card link -->
+                    <div class="service-header"> <!-- Card header -->
                         <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path d="M3 5h18M5 9h14M7 13h10M9 17h6" />
-                        </svg>
-                        <h3>Retouching & Post‑production</h3>
-                    </div>
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"> <!-- Lines icon SVG -->
+                            <path d="M3 5h18M5 9h14M7 13h10M9 17h6" /> <!-- Parallel lines representing adjustments -->
+                        </svg> <!-- End icon -->
+                        <h3>Retouching & Post‑production</h3> <!-- Card title -->
+                    </div> <!-- End card header -->
                     <p>Professional retouching, consistent colour pipeline and publishing‑ready sets.</p>
-                </a></div>
+                    <!-- Card description -->
+                </a></div> <!-- End card -->
             <div class="service-card"><a class="service-card-link" href="services/events-lifestyle/">
-                    <div class="service-header">
+                    <!-- Events card link -->
+                    <div class="service-header"> <!-- Card header -->
                         <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path d="M5 19l2-4 3 3 3-5 6 6" />
-                        </svg>
-                        <h3>Events & Lifestyle</h3>
-                    </div>
-                    <p>Light reportage and lifestyle sets at events, meetups and promos.</p>
-                </a></div>
-            <div class="service-card"><a class="service-card-link" href="services/pets/">
-                    <div class="service-header">
+                            <!-- Trend line icon SVG -->
+                            <path d="M5 19l2-4 3 3 3-5 6 6" /> <!-- Trend path -->
+                        </svg> <!-- End icon -->
+                        <h3>Events & Lifestyle</h3> <!-- Card title -->
+                    </div> <!-- End card header -->
+                    <p>Light reportage and lifestyle sets at events, meetups and promos.</p> <!-- Card description -->
+                </a></div> <!-- End card -->
+            <div class="service-card"><a class="service-card-link" href="services/pets/"> <!-- Pets card link -->
+                    <div class="service-header"> <!-- Card header -->
                         <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <!-- Paw-like icon SVG -->
                             <path d="M6 14c-2-1-3-3-3-5 0-3 2-5 5-5 2 0 3 1 4 2 1-1 2-2 4-2 3 0 5 2 5 5 0 2-1 4-3 5" />
-                        </svg>
-                        <h3>Pets</h3>
-                    </div>
+                            <!-- Pet-themed path -->
+                        </svg> <!-- End icon -->
+                        <h3>Pets</h3> <!-- Card title -->
+                    </div> <!-- End card header -->
                     <p>Photo walks with pets at the beach, in parks or at home. Memorable series.</p>
-                </a></div>
-            <div class="service-card"><a class="service-card-link" href="real-estate/">
-                    <div class="service-header">
+                    <!-- Card description -->
+                </a></div> <!-- End card -->
+            <div class="service-card"><a class="service-card-link" href="real-estate/"> <!-- Real estate card link -->
+                    <div class="service-header"> <!-- Card header -->
                         <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <rect x="3" y="4" width="18" height="14" rx="2" />
-                            <path d="M9 10h6" />
-                        </svg>
-                        <h3>Real Estate</h3>
-                    </div>
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"> <!-- Window icon SVG -->
+                            <rect x="3" y="4" width="18" height="14" rx="2" /> <!-- Frame -->
+                            <path d="M9 10h6" /> <!-- Divider -->
+                        </svg> <!-- End icon -->
+                        <h3>Real Estate</h3> <!-- Card title -->
+                    </div> <!-- End card header -->
                     <p>Interiors, exteriors, architecture, twilight and aerials for faster sales and rentals.</p>
-                </a></div>
+                    <!-- Card description -->
+                </a></div> <!-- End card -->
             <div class="service-card"><a class="service-card-link" href="services/corporate-teams/">
-                    <div class="service-header">
+                    <!-- Corporate teams card link -->
+                    <div class="service-header"> <!-- Card header -->
                         <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path d="M4 6h16M6 10h12M8 14h8" />
-                        </svg>
-                        <h3>Corporate Teams</h3>
-                    </div>
+                            <!-- Menu lines icon SVG -->
+                            <path d="M4 6h16M6 10h12M8 14h8" /> <!-- Horizontal lines -->
+                        </svg> <!-- End icon -->
+                        <h3>Corporate Teams</h3> <!-- Card title -->
+                    </div> <!-- End card header -->
                     <p>Team and staff portraits on location or in studio with consistent branding.</p>
-                </a></div>
+                    <!-- Card description -->
+                </a></div> <!-- End card -->
             <div class="service-card"><a class="service-card-link" href="services/studio-portraits/">
-                    <div class="service-header">
+                    <!-- Studio portraits card link -->
+                    <div class="service-header"> <!-- Card header -->
                         <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path d="M6 4h12v16H6z" />
-                            <path d="M9 9h6M9 13h6" />
-                        </svg>
-                        <h3>Studio Portraits</h3>
-                    </div>
-                    <p>Clean studio setups for individuals, couples or product hero shots.</p>
-                </a></div>
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"> <!-- Frame icon SVG -->
+                            <path d="M6 4h12v16H6z" /> <!-- Frame -->
+                            <path d="M9 9h6M9 13h6" /> <!-- Inner lines -->
+                        </svg> <!-- End icon -->
+                        <h3>Studio Portraits</h3> <!-- Card title -->
+                    </div> <!-- End card header -->
+                    <p>Clean studio setups for individuals, couples or product hero shots.</p> <!-- Card description -->
+                </a></div> <!-- End card -->
             <div class="service-card"><a class="service-card-link" href="services/fashion-editorial/">
-                    <div class="service-header">
+                    <!-- Fashion card link -->
+                    <div class="service-header"> <!-- Card header -->
                         <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <circle cx="12" cy="12" r="6" />
-                            <path d="M12 6l2 4 4 2-4 2-2 4-2-4-4-2 4-2z" />
-                        </svg>
-                        <h3>Fashion & Editorial</h3>
-                    </div>
-                    <p>Lookbooks and editorial sets with models and creative direction.</p>
-                </a></div>
-        </div>
-    </section>
-
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"> <!-- Badge icon SVG -->
+                            <circle cx="12" cy="12" r="6" /> <!-- Outer circle -->
+                            <path d="M12 6l2 4 4 2-4 2-2 4-2-4-4-2 4-2z" /> <!-- Starburst -->
+                        </svg> <!-- End icon -->
+                        <h3>Fashion & Editorial</h3> <!-- Card title -->
+                    </div> <!-- End card header -->
+                    <p>Lookbooks and editorial sets with models and creative direction.</p> <!-- Card description -->
+                </a></div> <!-- End card -->
+        </div> <!-- End services grid -->
+    </section> <!-- End services section -->
+    <!-- Empty line for readability -->
     <section id="promo-realestate" class="parallax" style="background-image: url('images/cleaning/bg11.png')">
-        <div class="parallax-content">
-            <h2>Explore Real Estate Photography</h2>
-            <p>Interiors, exteriors, architecture, twilight and aerial imagery</p>
-        </div>
-    </section>
-
-    <section class="section section-bridge">
-        <div class="bridge-inner">
-            <h2>Make Properties Stand Out</h2>
+        <!-- Parallax promo for real estate -->
+        <div class="parallax-content"> <!-- Parallax text container -->
+            <h2>Explore Real Estate Photography</h2> <!-- Parallax heading -->
+            <p>Interiors, exteriors, architecture, twilight and aerial imagery</p> <!-- Parallax description -->
+        </div> <!-- End parallax content -->
+    </section> <!-- End parallax section -->
+    <!-- Empty line for readability -->
+    <section class="section section-bridge"> <!-- Bridge section linking to services -->
+        <div class="bridge-inner"> <!-- Inner container for bridge content -->
+            <h2>Make Properties Stand Out</h2> <!-- Bridge heading -->
             <p>Clean, consistent sets built to convert: interiors, exteriors and twilight coverage with a careful
-                post‑production pipeline.</p>
-            <div class="cta-row">
+                post‑production pipeline.</p> <!-- Bridge description -->
+            <div class="cta-row"> <!-- Call-to-action row -->
                 <a class="cta-button" href="real-estate/" aria-label="Go to Real Estate">View Services</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Parallax Section 1 -->
-
-
-    <!-- Parallax Section 1 -->
-    <div class="parallax" style="background-image: url('images/cleaning/bg5.png')">
-        <div class="parallax-content">
-            <h2>Images That Sell</h2>
-            <p>Photography crafted to elevate listings and speed up sales.</p>
-        </div>
-    </div>
-
-    <!-- About Section -->
-    <section id="about" class="section">
-        <h2>About Pro Photo Gurus</h2>
+                <!-- CTA button -->
+            </div> <!-- End CTA row -->
+        </div> <!-- End bridge inner -->
+    </section> <!-- End bridge section -->
+    <!-- Empty line for readability -->
+    <!-- Parallax Section 1 --> <!-- Spacer comment -->
+    <!-- Empty line for readability -->
+    <!-- Empty line for readability -->
+    <!-- Parallax Section 1 --> <!-- Another parallax block -->
+    <div class="parallax" style="background-image: url('images/cleaning/bg5.png')"> <!-- Parallax background image -->
+        <div class="parallax-content"> <!-- Parallax text container -->
+            <h2>Images That Sell</h2> <!-- Parallax heading -->
+            <p>Photography crafted to elevate listings and speed up sales.</p> <!-- Parallax description -->
+        </div> <!-- End parallax content -->
+    </div> <!-- End parallax block -->
+    <!-- Empty line for readability -->
+    <!-- About Section --> <!-- Section label for about -->
+    <section id="about" class="section"> <!-- About section start -->
+        <h2>About Pro Photo Gurus</h2> <!-- About heading -->
         <p>I am a professional photographer based in Adelaide, focused on real estate and commercial work. I combine
             careful planning, lighting control and post‑production to deliver clean, consistent and persuasive visuals.
-        </p>
+        </p> <!-- About paragraph 1 -->
         <p>Whether you are an agency, developer or property owner, I provide fast turnaround and a dependable workflow
-            designed to maximise the marketing value of every image set.</p>
-        <p>Simple goal: visuals that help you sell faster, rent easier and stand out.</p>
-    </section>
-
-    <!-- Parallax Section 2 -->
-    <div class="parallax" style="background-image: url('images/cleaning/bg6.png')">
-        <div class="parallax-content">
-            <h2>Adelaide Wide</h2>
-            <p>From the coast to the hills — on location, on time.</p>
-        </div>
-    </div>
-
-    <!-- Pricing Section -->
-    <section id="pricing" class="section">
-        <h2>How Pricing Works</h2>
+            designed to maximise the marketing value of every image set.</p> <!-- About paragraph 2 -->
+        <p>Simple goal: visuals that help you sell faster, rent easier and stand out.</p> <!-- About paragraph 3 -->
+    </section> <!-- End about section -->
+    <!-- Empty line for readability -->
+    <!-- Parallax Section 2 --> <!-- Next parallax block -->
+    <div class="parallax" style="background-image: url('images/cleaning/bg6.png')"> <!-- Parallax background image -->
+        <div class="parallax-content"> <!-- Parallax text container -->
+            <h2>Adelaide Wide</h2> <!-- Parallax heading -->
+            <p>From the coast to the hills — on location, on time.</p> <!-- Parallax description -->
+        </div> <!-- End parallax content -->
+    </div> <!-- End parallax block -->
+    <!-- Empty line for readability -->
+    <!-- Pricing Section --> <!-- Section label for pricing -->
+    <section id="pricing" class="section"> <!-- Pricing section start -->
+        <h2>How Pricing Works</h2> <!-- Pricing heading -->
         <p>Every property and brief is unique. Quotes are tailored to your listing goals and required deliverables.</p>
-        <div class="pricing-details">
-            <p><strong>Starting Point:</strong> From <strong>$300</strong> per shoot set.</p>
+        <!-- Pricing overview -->
+        <div class="pricing-details"> <!-- Pricing details container -->
+            <p><strong>Starting Point:</strong> From <strong>$300</strong> per shoot set.</p> <!-- Starting price -->
             <p><strong>Accurate Quote:</strong> A quick on‑site or brief‑based assessment ensures you receive the right
-                coverage and value.</p>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials">
-        <h2>What Clients Say</h2>
-        <div class="testimonials-grid">
-            <div class="testimonial">
+                coverage and value.</p> <!-- Quote explanation -->
+        </div> <!-- End pricing details -->
+    </section> <!-- End pricing section -->
+    <!-- Empty line for readability -->
+    <!-- Testimonials Section --> <!-- Section label for testimonials -->
+    <section id="testimonials" class="testimonials"> <!-- Testimonials section start -->
+        <h2>What Clients Say</h2> <!-- Testimonials heading -->
+        <div class="testimonials-grid"> <!-- Grid of testimonials -->
+            <div class="testimonial"> <!-- Testimonial card -->
                 <div class="testimonial-avatar"><img src="images/reviews/portraits-headshots-linkedIn-sarah.png"
-                        alt="Sarah G., HR Manager" /></div>
+                        alt="Sarah G., HR Manager" /></div> <!-- Avatar image with alt text -->
                 <p class="testimonial-text">“Bloody brilliant headshots! You made my LinkedIn profile look the goods.
-                    You're an absolute legend.”</p>
-                <p class="testimonial-author">- Sarah G., HR Manager · Portraits & Headshots</p>
-            </div>
-            <div class="testimonial">
+                    You're an absolute legend.”</p> <!-- Testimonial quote -->
+                <p class="testimonial-author">- Sarah G., HR Manager · Portraits & Headshots</p> <!-- Author line -->
+            </div> <!-- End testimonial -->
+            <div class="testimonial"> <!-- Testimonial card -->
                 <div class="testimonial-avatar"><img src="images/reviews/love-story-pre-wedding-liam-chloe.png"
-                        alt="Liam & Chloe" /></div>
+                        alt="Liam & Chloe" /></div> <!-- Avatar -->
                 <p class="testimonial-text">“The photos are mad! You made it feel like a cruisy arvo, even though we
-                    were stressing. Cheers, mate.”</p>
-                <p class="testimonial-author">- Liam & Chloe · Love Story & Pre‑Wedding</p>
-            </div>
-            <div class="testimonial">
+                    were stressing. Cheers, mate.”</p> <!-- Quote -->
+                <p class="testimonial-author">- Liam & Chloe · Love Story & Pre‑Wedding</p> <!-- Author -->
+            </div> <!-- End testimonial -->
+            <div class="testimonial"> <!-- Testimonial card -->
                 <div class="testimonial-avatar"><img src="images/reviews/families-kids-connell.png"
-                        alt="Mrs. J. O'Connell" /></div>
+                        alt="Mrs. J. O'Connell" /></div> <!-- Avatar -->
                 <p class="testimonial-text">“You're a saint! Got a stunning family pic without a single tantrum. Fair
-                    dinkum miracle worker.”</p>
-                <p class="testimonial-author">- Mrs. J. O'Connell · Families & Kids</p>
-            </div>
-            <div class="testimonial">
+                    dinkum miracle worker.”</p> <!-- Quote -->
+                <p class="testimonial-author">- Mrs. J. O'Connell · Families & Kids</p> <!-- Author -->
+            </div> <!-- End testimonial -->
+            <div class="testimonial"> <!-- Testimonial card -->
                 <div class="testimonial-avatar"><img src="images/reviews/branding-social-koffee-van.png"
-                        alt="The Koffee Van" /></div>
+                        alt="The Koffee Van" /></div> <!-- Avatar -->
                 <p class="testimonial-text">“My Instagram is absolutely pumping now. Cohesive, fresh look. You're a
-                    beauty!”</p>
-                <p class="testimonial-author">- The Koffee Van · Branding & Social</p>
-            </div>
-            <div class="testimonial">
-                <div class="testimonial-avatar">O</div>
+                    beauty!”</p> <!-- Quote -->
+                <p class="testimonial-author">- The Koffee Van · Branding & Social</p> <!-- Author -->
+            </div> <!-- End testimonial -->
+            <div class="testimonial"> <!-- Testimonial card -->
+                <div class="testimonial-avatar">O</div> <!-- Placeholder avatar initial -->
                 <p class="testimonial-text">“The product shots are ace. Selling like hotcakes. No dramas at all, top
-                    bloke.”</p>
-                <p class="testimonial-author">- Outback Outfitters · Products & Advertising</p>
-            </div>
-            <div class="testimonial">
-                <div class="testimonial-avatar">C</div>
+                    bloke.”</p> <!-- Quote -->
+                <p class="testimonial-author">- Outback Outfitters · Products & Advertising</p> <!-- Author -->
+            </div> <!-- End testimonial -->
+            <div class="testimonial"> <!-- Testimonial card -->
+                <div class="testimonial-avatar">C</div> <!-- Placeholder avatar initial -->
                 <p class="testimonial-text">“Sent you some shockers, got back masterpieces. The colour grading is sweet
-                    as. Saved my bacon.”</p>
-                <p class="testimonial-author">- Chris P., Freelance Photographer · Retouching</p>
-            </div>
-            <div class="testimonial">
-                <div class="testimonial-avatar">P</div>
+                    as. Saved my bacon.”</p> <!-- Quote -->
+                <p class="testimonial-author">- Chris P., Freelance Photographer · Retouching</p> <!-- Author -->
+            </div> <!-- End testimonial -->
+            <div class="testimonial"> <!-- Testimonial card -->
+                <div class="testimonial-avatar">P</div> <!-- Placeholder avatar initial -->
                 <p class="testimonial-text">“The vibe of the event was perfectly captured. Not a blurry pic in the lot.
-                    Stoked with the results, mate.”</p>
-                <p class="testimonial-author">- The Local Pub · Events & Lifestyle</p>
-            </div>
-            <div class="testimonial">
-                <div class="testimonial-avatar">R</div>
+                    Stoked with the results, mate.”</p> <!-- Quote -->
+                <p class="testimonial-author">- The Local Pub · Events & Lifestyle</p> <!-- Author -->
+            </div> <!-- End testimonial -->
+            <div class="testimonial"> <!-- Testimonial card -->
+                <div class="testimonial-avatar">R</div> <!-- Placeholder avatar initial -->
                 <p class="testimonial-text">“You captured Rex's cheeky grin! Best doggo photo shoot ever. Definitely
-                    recommend you to all my mates.”</p>
-                <p class="testimonial-author">- Dave & Rex · Pets</p>
-            </div>
-            <div class="testimonial">
-                <div class="testimonial-avatar">B</div>
+                    recommend you to all my mates.”</p> <!-- Quote -->
+                <p class="testimonial-author">- Dave & Rex · Pets</p> <!-- Author -->
+            </div> <!-- End testimonial -->
+            <div class="testimonial"> <!-- Testimonial card -->
+                <div class="testimonial-avatar">B</div> <!-- Placeholder avatar initial -->
                 <p class="testimonial-text">“Listings are flying off the shelf! Serious quality photos that stand out
-                    from the pack. Ripper job, thanks.”</p>
-                <p class="testimonial-author">- Barry's Homes · Real Estate</p>
-            </div>
-            <div class="testimonial">
-                <div class="testimonial-avatar">A</div>
+                    from the pack. Ripper job, thanks.”</p> <!-- Quote -->
+                <p class="testimonial-author">- Barry's Homes · Real Estate</p> <!-- Author -->
+            </div> <!-- End testimonial -->
+            <div class="testimonial"> <!-- Testimonial card -->
+                <div class="testimonial-avatar">A</div> <!-- Placeholder avatar initial -->
                 <p class="testimonial-text">“You got the whole team looking professional, not like a bunch of tradies
-                    down the pub. Good on ya.”</p>
-                <p class="testimonial-author">- AquaFlow Plumbing · Corporate Teams</p>
-            </div>
-            <div class="testimonial">
-                <div class="testimonial-avatar">J</div>
+                    down the pub. Good on ya.”</p> <!-- Quote -->
+                <p class="testimonial-author">- AquaFlow Plumbing · Corporate Teams</p> <!-- Author -->
+            </div> <!-- End testimonial -->
+            <div class="testimonial"> <!-- Testimonial card -->
+                <div class="testimonial-avatar">J</div> <!-- Placeholder avatar initial -->
                 <p class="testimonial-text">“Needed clean, sharp photos for my portfolio. You nailed it. Simple, slick,
-                    and exactly what I needed.”</p>
-                <p class="testimonial-author">- Jessica L., Artist · Studio Portraits</p>
-            </div>
-            <div class="testimonial">
-                <div class="testimonial-avatar">C</div>
+                    and exactly what I needed.”</p> <!-- Quote -->
+                <p class="testimonial-author">- Jessica L., Artist · Studio Portraits</p> <!-- Author -->
+            </div> <!-- End testimonial -->
+            <div class="testimonial"> <!-- Testimonial card -->
+                <div class="testimonial-avatar">C</div> <!-- Placeholder avatar initial -->
                 <p class="testimonial-text">“The editorial spread is mint. Your composition and direction are next
-                    level. We'll be back for sure.”</p>
-                <p class="testimonial-author">- Coastal Threads Magazine · Fashion & Editorial</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Trust & Compliance Section -->
-    <section id="trust" class="section trust">
-        <h2>Your Trust – Our Priority: Safety and Professionalism</h2>
-        <div class="trust-details">
+                    level. We'll be back for sure.”</p> <!-- Quote -->
+                <p class="testimonial-author">- Coastal Threads Magazine · Fashion & Editorial</p> <!-- Author -->
+            </div> <!-- End testimonial -->
+        </div> <!-- End testimonials grid -->
+    </section> <!-- End testimonials section -->
+    <!-- Empty line for readability -->
+    <!-- Trust & Compliance Section --> <!-- Section label for trust/compliance -->
+    <section id="trust" class="section trust"> <!-- Trust section start -->
+        <h2>Your Trust – Our Priority: Safety and Professionalism</h2> <!-- Trust heading -->
+        <div class="trust-details"> <!-- Trust details container -->
             <p>Your peace of mind is our utmost priority. Our entire team adheres to the highest standards of safety and
-                integrity, validated by comprehensive Australian checks, including:</p>
-            <ul class="checks-list">
-                <li>Police Check</li>
-                <li>NDIS worker check</li>
-                <li>Aged Care Sector Employment Screening</li>
-                <li>Working With Children Check</li>
-            </ul>
+                integrity, validated by comprehensive Australian checks, including:</p> <!-- Trust intro -->
+            <ul class="checks-list"> <!-- Compliance checks list -->
+                <li>Police Check</li> <!-- Police background check -->
+                <li>NDIS worker check</li> <!-- NDIS worker verification -->
+                <li>Aged Care Sector Employment Screening</li> <!-- Aged care screening -->
+                <li>Working With Children Check</li> <!-- WWCC -->
+            </ul> <!-- End checks list -->
             <p class="vaccination-note">For your added protection, our staff are fully vaccinated against COVID‑19 and
-                Influenza.</p>
-            <h3>Important for Speed and Quality</h3>
+                Influenza.</p> <!-- Vaccination note -->
+            <h3>Important for Speed and Quality</h3> <!-- Subheading -->
             <p>We achieve the best and fastest results in an empty space. For maximum efficiency and impeccable cleaning
                 quality, we kindly request that no one is present in the areas being cleaned. This allows our
                 professionals to work swiftly and uninterrupted, ensuring a superior outcome every time.</p>
-        </div>
-    </section>
-
-    <!-- Discounts Promo Section (CTA) moved near the bottom, before Contact -->
+            <!-- Efficiency note -->
+        </div> <!-- End trust details -->
+    </section> <!-- End trust section -->
+    <!-- Empty line for readability -->
+    <!-- Discounts Promo Section (CTA) moved near the bottom, before Contact --> <!-- Section label for discounts -->
     <section id="promo-discounts" class="parallax promo-discounts"
-        style="background-image: url('images/cleaning/bg9.png')">
-        <div class="parallax-content">
-            <h2>Seasonal Offers</h2>
-            <p>Value packs for agents, landlords and hosts</p>
+        style="background-image: url('images/cleaning/bg9.png')"> <!-- Parallax discounts background -->
+        <div class="parallax-content"> <!-- Parallax text container -->
+            <h2>Seasonal Offers</h2> <!-- Discounts heading -->
+            <p>Value packs for agents, landlords and hosts</p> <!-- Discounts description -->
             <a class="cta-button" href="discounts/" aria-label="Go to Special Offers">Explore Discounts</a>
-        </div>
-    </section>
-
-    <section id="regular-benefits" class="section">
-        <h2>Why Work With Me</h2>
-        <p>Clear process, reliable scheduling and images built to convert.</p>
-        <ul class="checks-list">
-            <li>Priority booking for agencies and repeat clients</li>
-            <li>Consistent colour pipeline and lens‑corrected geometry</li>
-            <li>Optional aerials, twilight coverage and studio setups</li>
-            <li>Transparent quotes based on brief and deliverables</li>
-        </ul>
-    </section>
-
+            <!-- CTA to discounts page -->
+        </div> <!-- End parallax content -->
+    </section> <!-- End discounts section -->
+    <!-- Empty line for readability -->
+    <section id="regular-benefits" class="section"> <!-- Benefits section start -->
+        <h2>Why Work With Me</h2> <!-- Benefits heading -->
+        <p>Clear process, reliable scheduling and images built to convert.</p> <!-- Benefits description -->
+        <ul class="checks-list"> <!-- Benefits list -->
+            <li>Priority booking for agencies and repeat clients</li> <!-- Benefit item -->
+            <li>Consistent colour pipeline and lens‑corrected geometry</li> <!-- Benefit item -->
+            <li>Optional aerials, twilight coverage and studio setups</li> <!-- Benefit item -->
+            <li>Transparent quotes based on brief and deliverables</li> <!-- Benefit item -->
+        </ul> <!-- End benefits list -->
+    </section> <!-- End benefits section -->
+    <!-- Empty line for readability -->
     <section id="promo-franchise" class="parallax" style="background-image: url('images/bg6.png')">
-        <div class="parallax-content">
-            <h2>Franchise Opportunity</h2>
-            <p>Use our brand and build your studio</p>
+        <!-- Franchise parallax section -->
+        <div class="parallax-content"> <!-- Parallax text container -->
+            <h2>Franchise Opportunity</h2> <!-- Franchise heading -->
+            <p>Use our brand and build your studio</p> <!-- Franchise description -->
             <a class="cta-button" href="franchise/" aria-label="Go to Franchise Page">Explore Franchise</a>
-        </div>
-    </section>
-
-    <section id="gallery" class="section gallery">
-        <h2>Portfolio</h2>
-        <p>A curated selection of recent work. View the full set on the dedicated page.</p>
-        <div class="gallery-grid">
+            <!-- CTA to franchise page -->
+        </div> <!-- End parallax content -->
+    </section> <!-- End franchise section -->
+    <!-- Empty line for readability -->
+    <section id="gallery" class="section gallery"> <!-- Portfolio gallery section -->
+        <h2>Portfolio</h2> <!-- Gallery heading -->
+        <p>A curated selection of recent work. View the full set on the dedicated page.</p> <!-- Gallery description -->
+        <div class="gallery-grid"> <!-- Grid of gallery items -->
             <div class="gallery-item"><img src="images/cleaning/bg1.png" alt="Interior living room" /></div>
+            <!-- Gallery image 1 -->
             <div class="gallery-item"><img src="images/cleaning/bg2.png" alt="Modern kitchen" /></div>
+            <!-- Gallery image 2 -->
             <div class="gallery-item"><img src="images/cleaning/bg3.png" alt="Facade at dusk" /></div>
+            <!-- Gallery image 3 -->
             <div class="gallery-item"><img src="images/cleaning/bg4.png" alt="Bedroom styling" /></div>
+            <!-- Gallery image 4 -->
             <div class="gallery-item"><img src="images/branding-and-social/branding-and-social1.png"
-                    alt="Branding set 1" /></div>
+                    alt="Branding set 1" /></div> <!-- Gallery image 5 -->
             <div class="gallery-item"><img src="images/branding-and-social/branding-and-social2.png"
-                    alt="Branding set 2" /></div>
+                    alt="Branding set 2" /></div> <!-- Gallery image 6 -->
             <div class="gallery-item"><img src="images/linkedin/linkedin1.png" alt="LinkedIn portrait 1" /></div>
+            <!-- Gallery image 7 -->
             <div class="gallery-item"><img src="images/linkedin/linkedin2.png" alt="LinkedIn portrait 2" /></div>
+            <!-- Gallery image 8 -->
             <div class="gallery-item"><img src="images/love-story-and-pre-wedding/love-story-and-pre-wedding1.png"
-                    alt="Love story 1" /></div>
+                    alt="Love story 1" /></div> <!-- Gallery image 9 -->
             <div class="gallery-item"><img src="images/wedding/wedding7.png" alt="Wedding 7" /></div>
+            <!-- Gallery image 10 -->
             <div class="gallery-item"><img src="images/families-and-kids/families-and-kids1.png"
-                    alt="Families & kids" /></div>
+                    alt="Families & kids" /></div> <!-- Gallery image 11 -->
             <div class="gallery-item"><img src="images/backgrounds/background12.png" alt="Studio minimal" /></div>
-        </div>
+            <!-- Gallery image 12 -->
+        </div> <!-- End gallery grid -->
         <div class="cta-row"><a class="cta-button" href="gallery/" aria-label="Open full portfolio">View Full
-                Portfolio</a></div>
-        <div id="lightbox" class="lightbox" aria-hidden="true">
-            <img class="lightbox-image" alt="Expanded portfolio image" />
-            <button class="lightbox-close" aria-label="Close">×</button>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <h2>Get in Touch</h2>
-        <p>Ready to plan your shoot? Let's discuss ideas and schedule a session.</p>
-        <p>Serving all Adelaide metropolitan areas with flexible scheduling.</p>
+                Portfolio</a></div> <!-- CTA to open full gallery -->
+        <div id="lightbox" class="lightbox" aria-hidden="true"> <!-- Lightbox overlay -->
+            <img class="lightbox-image" alt="Expanded portfolio image" /> <!-- Lightbox image element -->
+            <button class="lightbox-close" aria-label="Close">×</button> <!-- Close button -->
+        </div> <!-- End lightbox -->
+    </section> <!-- End gallery section -->
+    <!-- Empty line for readability -->
+    <!-- Contact Section --> <!-- Section label for contact -->
+    <section id="contact" class="section"> <!-- Contact section start -->
+        <h2>Get in Touch</h2> <!-- Contact heading -->
+        <p>Ready to plan your shoot? Let's discuss ideas and schedule a session.</p> <!-- Contact description -->
+        <p>Serving all Adelaide metropolitan areas with flexible scheduling.</p> <!-- Service areas note -->
         <p><strong>Email:</strong> <a href='mailto:veryfatwombat@gmail.com'>veryfatwombat@gmail.com</a></p>
-        <p><strong>Service Area:</strong> Adelaide and surrounds</p>
-    </section>
-
-    <section class="section process">
-        <h2>How I Work</h2>
-        <div class="process-steps">
-            <div class="process-step">
-                <div class="step-icon">
+        <!-- Contact email -->
+        <p><strong>Service Area:</strong> Adelaide and surrounds</p> <!-- Service area info -->
+    </section> <!-- End contact section -->
+    <!-- Empty line for readability -->
+    <section class="section process"> <!-- Process section start -->
+        <h2>How I Work</h2> <!-- Process heading -->
+        <div class="process-steps"> <!-- Steps container -->
+            <div class="process-step"> <!-- Step card -->
+                <div class="step-icon"> <!-- Step icon container -->
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M3 8h18M6 4h12M4 12h16M4 16h10" />
-                    </svg>
-                </div>
-                <h3>Inquiry</h3>
-                <p>Brief, goals and mood. Simple chat to align expectations.</p>
-            </div>
-            <div class="process-step">
-                <div class="step-icon">
+                        stroke-linejoin="round"> <!-- Icon SVG -->
+                        <path d="M3 8h18M6 4h12M4 12h16M4 16h10" /> <!-- Lines icon -->
+                    </svg> <!-- End icon -->
+                </div> <!-- End step icon -->
+                <h3>Inquiry</h3> <!-- Step title -->
+                <p>Brief, goals and mood. Simple chat to align expectations.</p> <!-- Step description -->
+            </div> <!-- End step -->
+            <div class="process-step"> <!-- Step card -->
+                <div class="step-icon"> <!-- Step icon container -->
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <rect x="3" y="4" width="18" height="14" rx="2" />
-                        <path d="M7 8h10M7 12h6" />
-                    </svg>
-                </div>
-                <h3>Planning</h3>
-                <p>Locations, timing, styling and shot list mapped to usage.</p>
-            </div>
-            <div class="process-step">
-                <div class="step-icon">
+                        stroke-linejoin="round"> <!-- Icon SVG -->
+                        <rect x="3" y="4" width="18" height="14" rx="2" /> <!-- Screen -->
+                        <path d="M7 8h10M7 12h6" /> <!-- Lines -->
+                    </svg> <!-- End icon -->
+                </div> <!-- End step icon -->
+                <h3>Planning</h3> <!-- Step title -->
+                <p>Locations, timing, styling and shot list mapped to usage.</p> <!-- Step description -->
+            </div> <!-- End step -->
+            <div class="process-step"> <!-- Step card -->
+                <div class="step-icon"> <!-- Step icon container -->
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <rect x="3" y="5" width="18" height="16" rx="2" />
-                        <path d="M3 9h18" />
-                        <path d="M7 5v-1" />
-                        <path d="M17 5v-1" />
-                    </svg>
-                </div>
-                <h3>Booking</h3>
-                <p>Securing the date, contract finalization, and deposit submission.</p>
-            </div>
-            <div class="process-step">
-                <div class="step-icon">
+                        stroke-linejoin="round"> <!-- Icon SVG -->
+                        <rect x="3" y="5" width="18" height="16" rx="2" /> <!-- Calendar frame -->
+                        <path d="M3 9h18" /> <!-- Calendar line -->
+                        <path d="M7 5v-1" /> <!-- Left tab -->
+                        <path d="M17 5v-1" /> <!-- Right tab -->
+                    </svg> <!-- End icon -->
+                </div> <!-- End step icon -->
+                <h3>Booking</h3> <!-- Step title -->
+                <p>Securing the date, contract finalization, and deposit submission.</p> <!-- Step description -->
+            </div> <!-- End step -->
+            <div class="process-step"> <!-- Step card -->
+                <div class="step-icon"> <!-- Step icon container -->
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <rect x="3" y="7" width="18" height="12" rx="2" />
-                        <circle cx="12" cy="13" r="3" />
-                    </svg>
-                </div>
-                <h3>Shooting</h3>
-                <p>Light control and composition for clean, consistent frames.</p>
-            </div>
-            <div class="process-step">
-                <div class="step-icon">
+                        stroke-linejoin="round"> <!-- Icon SVG -->
+                        <rect x="3" y="7" width="18" height="12" rx="2" /> <!-- Camera body -->
+                        <circle cx="12" cy="13" r="3" /> <!-- Lens -->
+                    </svg> <!-- End icon -->
+                </div> <!-- End step icon -->
+                <h3>Shooting</h3> <!-- Step title -->
+                <p>Light control and composition for clean, consistent frames.</p> <!-- Step description -->
+            </div> <!-- End step -->
+            <div class="process-step"> <!-- Step card -->
+                <div class="step-icon"> <!-- Step icon container -->
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <rect x="3" y="4" width="18" height="14" rx="2" />
-                        <circle cx="8" cy="10" r="2" />
-                        <path d="M12 12l2-2 4 4" />
-                    </svg>
-                </div>
-                <h3>Proofing</h3>
+                        stroke-linejoin="round"> <!-- Icon SVG -->
+                        <rect x="3" y="4" width="18" height="14" rx="2" /> <!-- Screen -->
+                        <circle cx="8" cy="10" r="2" /> <!-- Marker -->
+                        <path d="M12 12l2-2 4 4" /> <!-- Check mark -->
+                    </svg> <!-- End icon -->
+                </div> <!-- End step icon -->
+                <h3>Proofing</h3> <!-- Step title -->
                 <p>Reviewing the proofs and selecting your favorite images for final retouching.</p>
-            </div>
-            <div class="process-step">
-                <div class="step-icon">
+                <!-- Step description -->
+            </div> <!-- End step -->
+            <div class="process-step"> <!-- Step card -->
+                <div class="step-icon"> <!-- Step icon container -->
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M4 6h16M6 10h12M8 14h8" />
-                    </svg>
-                </div>
-                <h3>Editing</h3>
-                <p>Colour pipeline, retouching and exports tailored to platforms.</p>
-            </div>
-            <div class="process-step">
-                <div class="step-icon">
+                        stroke-linejoin="round"> <!-- Icon SVG -->
+                        <path d="M4 6h16M6 10h12M8 14h8" /> <!-- Lines icon -->
+                    </svg> <!-- End icon -->
+                </div> <!-- End step icon -->
+                <h3>Editing</h3> <!-- Step title -->
+                <p>Colour pipeline, retouching and exports tailored to platforms.</p> <!-- Step description -->
+            </div> <!-- End step -->
+            <div class="process-step"> <!-- Step card -->
+                <div class="step-icon"> <!-- Step icon container -->
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M3 12l7 7 11-11" />
-                    </svg>
-                </div>
-                <h3>Delivery</h3>
-                <p>Fast turnaround and structured folders for easy publishing.</p>
-            </div>
-            <div class="process-step">
-                <div class="step-icon">
+                        stroke-linejoin="round"> <!-- Icon SVG -->
+                        <path d="M3 12l7 7 11-11" /> <!-- Check path -->
+                    </svg> <!-- End icon -->
+                </div> <!-- End step icon -->
+                <h3>Delivery</h3> <!-- Step title -->
+                <p>Fast turnaround and structured folders for easy publishing.</p> <!-- Step description -->
+            </div> <!-- End step -->
+            <div class="process-step"> <!-- Step card -->
+                <div class="step-icon"> <!-- Step icon container -->
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <rect x="4" y="6" width="16" height="12" rx="2" />
-                        <path d="M8 10h8" />
-                        <path d="M8 14h5" />
-                        <path d="M16 19l3-3" />
-                    </svg>
-                </div>
-                <h3>Review & Archive</h3>
+                        stroke-linejoin="round"> <!-- Icon SVG -->
+                        <rect x="4" y="6" width="16" height="12" rx="2" /> <!-- Screen -->
+                        <path d="M8 10h8" /> <!-- Line -->
+                        <path d="M8 14h5" /> <!-- Line -->
+                        <path d="M16 19l3-3" /> <!-- Arrow to archive -->
+                    </svg> <!-- End icon -->
+                </div> <!-- End step icon -->
+                <h3>Review & Archive</h3> <!-- Step title -->
                 <p>Sharing your valuable feedback and planning for prints or future projects.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-links">
-            <a href="#home">
+                <!-- Step description -->
+            </div> <!-- End step -->
+        </div> <!-- End process steps -->
+    </section> <!-- End process section -->
+    <!-- Empty line for readability -->
+    <!-- Footer --> <!-- Site footer start -->
+    <footer> <!-- Footer container -->
+        <div class="footer-links"> <!-- Footer navigation links -->
+            <a href="#home"> <!-- Footer link: Home -->
                 <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M3 11l9-8 9 8" />
-                    <path d="M5 10v10h14V10" />
-                    <path d="M10 21v-6h4v6" />
-                </svg>
-                Home
-            </a>
-            <a href="#services">
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"> <!-- Home icon SVG -->
+                    <path d="M3 11l9-8 9 8" /> <!-- Roof -->
+                    <path d="M5 10v10h14V10" /> <!-- House -->
+                    <path d="M10 21v-6h4v6" /> <!-- Door -->
+                </svg> <!-- End icon -->
+                Home <!-- Link label -->
+            </a> <!-- End footer link -->
+            <a href="#services"> <!-- Footer link: Services -->
                 <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <rect x="3" y="7" width="18" height="13" rx="2" />
-                    <path d="M8 7V5h8v2" />
-                </svg>
-                Services
-            </a>
-            <a href="#about">
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"> <!-- Monitor icon SVG -->
+                    <rect x="3" y="7" width="18" height="13" rx="2" /> <!-- Screen -->
+                    <path d="M8 7V5h8v2" /> <!-- Top bar -->
+                </svg> <!-- End icon -->
+                Services <!-- Link label -->
+            </a> <!-- End footer link -->
+            <a href="#about"> <!-- Footer link: About -->
                 <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <circle cx="12" cy="12" r="10" />
-                    <path d="M12 16v-4" />
-                    <path d="M12 8h.01" />
-                </svg>
-                About
-            </a>
-            <a href="#pricing">
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"> <!-- Info icon SVG -->
+                    <circle cx="12" cy="12" r="10" /> <!-- Circle -->
+                    <path d="M12 16v-4" /> <!-- Line -->
+                    <path d="M12 8h.01" /> <!-- Dot -->
+                </svg> <!-- End icon -->
+                About <!-- Link label -->
+            </a> <!-- End footer link -->
+            <a href="#pricing"> <!-- Footer link: Pricing -->
                 <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M3 12l9-9h6l3 3v6l-9 9-9-9z" />
-                    <path d="M15 6h.01" />
-                </svg>
-                Pricing
-            </a>
-            <a href="#testimonials">
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"> <!-- Tag icon SVG -->
+                    <path d="M3 12l9-9h6l3 3v6l-9 9-9-9z" /> <!-- Tag -->
+                    <path d="M15 6h.01" /> <!-- Hole -->
+                </svg> <!-- End icon -->
+                Pricing <!-- Link label -->
+            </a> <!-- End footer link -->
+            <a href="#testimonials"> <!-- Footer link: Reviews -->
                 <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M12 17.3L18.2 21l-1.6-7L22 9.2l-7.2-.6L12 2 9.2 8.6 2 9.2l5.5 4.7L5.8 21z" />
-                </svg>
-                Reviews
-            </a>
-            <a href="#contact">
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"> <!-- Star icon SVG -->
+                    <path d="M12 17.3L18.2 21l-1.6-7L22 9.2l-7.2-.6L12 2 9.2 8.6 2 9.2l5.5 4.7L5.8 21z" /> <!-- Star -->
+                </svg> <!-- End icon -->
+                Reviews <!-- Link label -->
+            </a> <!-- End footer link -->
+            <a href="#contact"> <!-- Footer link: Contact -->
                 <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <rect x="3" y="5" width="18" height="14" rx="2" />
-                    <path d="M3 7l9 6 9-6" />
-                </svg>
-                Contact
-            </a>
-            <a href="discounts/">
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"> <!-- Mail icon SVG -->
+                    <rect x="3" y="5" width="18" height="14" rx="2" /> <!-- Envelope -->
+                    <path d="M3 7l9 6 9-6" /> <!-- Flap -->
+                </svg> <!-- End icon -->
+                Contact <!-- Link label -->
+            </a> <!-- End footer link -->
+            <a href="discounts/"> <!-- Footer link: Discounts -->
                 <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <circle cx="7" cy="7" r="2" />
-                    <circle cx="17" cy="17" r="2" />
-                    <path d="M19 5L5 19" />
-                </svg>
-                Discounts
-            </a>
-            <a href="franchise/">
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"> <!-- Diagonal line icon SVG -->
+                    <circle cx="7" cy="7" r="2" /> <!-- Circle -->
+                    <circle cx="17" cy="17" r="2" /> <!-- Circle -->
+                    <path d="M19 5L5 19" /> <!-- Diagonal -->
+                </svg> <!-- End icon -->
+                Discounts <!-- Link label -->
+            </a> <!-- End footer link -->
+            <a href="franchise/"> <!-- Footer link: Franchise -->
                 <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <rect x="3" y="7" width="18" height="13" rx="2" />
-                    <path d="M8 7V5h8v2" />
-                    <path d="M7 12h10" />
-                    <path d="M7 16h10" />
-                </svg>
-                Franchise
-            </a>
-        </div>
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"> <!-- Menu icon SVG -->
+                    <rect x="3" y="7" width="18" height="13" rx="2" /> <!-- Screen -->
+                    <path d="M8 7V5h8v2" /> <!-- Bar -->
+                    <path d="M7 12h10" /> <!-- Line -->
+                    <path d="M7 16h10" /> <!-- Line -->
+                </svg> <!-- End icon -->
+                Franchise <!-- Link label -->
+            </a> <!-- End footer link -->
+        </div> <!-- End footer links -->
         <div class="note">&copy; Developed by <a href="https://github.com/dev-from-cbd"
                 title="Full stack developer Oleg Gribanov" target="_blank" rel="noopener noreferrer">Oleg</a> <a
                 href="https://www.linkedin.com/in/fatbadwombat/" title="Full stack developer Oleg Gribanov"
                 target="_blank" rel="noopener noreferrer">Gribanov</a> :: <span class="copyright__center-span">
-                <i class="fab fa-html5"></i>
-                <i class="fab fa-css3-alt"></i>
-                <i class="fab fa-js"></i> :: 2025-2026</div>
-    </footer>
+                <!-- Developer credit -->
+                <i class="fab fa-html5"></i> <!-- HTML5 icon -->
+                <i class="fab fa-css3-alt"></i> <!-- CSS3 icon -->
+                <i class="fab fa-js"></i> :: 2025-2026</div> <!-- JavaScript icon and year range -->
+    </footer> <!-- End footer -->
+    <!-- Empty line for readability -->
+    <script src="js/main.js"></script> <!-- Load main JavaScript file -->
+</body> <!-- End body -->
+<!-- Empty line for readability -->
 
-    <script src="js/main.js"></script>
-</body>
-
-</html>
+</html> <!-- End HTML document -->

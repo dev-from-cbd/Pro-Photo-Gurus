@@ -60,9 +60,12 @@ document.addEventListener('DOMContentLoaded', function () {
         var isFranchise = /\/franchise\//.test(path);
         var isGallery = /\/gallery\//.test(path);
         var base = '';
-        if (!isRoot) {
-            if (isService) base = '../..';
-            else if (isRealEstate || isDiscounts || isFranchise || isGallery) base = '..';
+        
+        // Determine base path for relative links
+        if (isService) {
+            base = '../..';
+        } else if (isDiscounts || isFranchise || isGallery) {
+            base = '..';
         }
 
         var services = [

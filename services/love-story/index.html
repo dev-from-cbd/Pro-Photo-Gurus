@@ -9,8 +9,33 @@
     <!-- font awesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="icon" href="../../images/favicon.png" type="image/x-icon" />
+    <style>
+        .love-story-hero {
+            position: relative;
+            overflow: hidden;
+        }
+        .love-story-hero-slider {
+            position: absolute;
+            inset: 0;
+        }
+        .love-story-hero-slide {
+            position: absolute;
+            inset: 0;
+            background-size: cover;
+            background-position: center center;
+            opacity: 0;
+            transition: opacity 1.6s ease-in-out;
+        }
+        .love-story-hero-slide.is-active {
+            opacity: 1;
+        }
+        .love-story-hero .parallax-content {
+            position: relative;
+            z-index: 2;
+        }
+    </style>
 </head>
-<body>
+<body class="love-story-page">
     <nav>
         <a href="https://dev-from-cbd.github.io/Pro-Photo-Gurus/" class="logo-link"><img src="../../images/logo.png" alt="Pro Photo Gurus Logo" class="logo"></a>
         <a href="https://dev-from-cbd.github.io/Pro-Photo-Gurus/" class="brand-name">Pro Photo Gurus</a>
@@ -20,7 +45,20 @@
             <li><a href="../">Services</a></li>
         </ul>
     </nav>
-    <div id="home" class="parallax love-story-hero" style="background-image: url('../../images/love-story-and-pre-wedding/love-story-and-pre-wedding1.png')">
+    <div id="home" class="parallax love-story-hero">
+        <div class="love-story-hero-slider" data-love-story-slider>
+            <div class="love-story-hero-slide is-active" style="background-image: url('../../images/love-story-and-pre-wedding/love-story-and-pre-wedding1.png')"></div>
+            <div class="love-story-hero-slide" style="background-image: url('../../images/love-story-and-pre-wedding/love-story-and-pre-wedding2.png')"></div>
+            <div class="love-story-hero-slide" style="background-image: url('../../images/love-story-and-pre-wedding/love-story-and-pre-wedding3.png')"></div>
+            <div class="love-story-hero-slide" style="background-image: url('../../images/love-story-and-pre-wedding/love-story-and-pre-wedding4.png')"></div>
+            <div class="love-story-hero-slide" style="background-image: url('../../images/love-story-and-pre-wedding/love-story-and-pre-wedding5.png')"></div>
+            <div class="love-story-hero-slide" style="background-image: url('../../images/love-story-and-pre-wedding/love-story-and-pre-wedding6.png')"></div>
+            <div class="love-story-hero-slide" style="background-image: url('../../images/love-story-and-pre-wedding/love-story-and-pre-wedding7.png')"></div>
+            <div class="love-story-hero-slide" style="background-image: url('../../images/love-story-and-pre-wedding/love-story-and-pre-wedding9.png')"></div>
+            <div class="love-story-hero-slide" style="background-image: url('../../images/love-story-and-pre-wedding/love-story-and-pre-wedding10.png')"></div>
+            <div class="love-story-hero-slide" style="background-image: url('../../images/love-story-and-pre-wedding/love-story-and-pre-wedding11.png')"></div>
+            <div class="love-story-hero-slide" style="background-image: url('../../images/love-story-and-pre-wedding/love-story-and-pre-wedding13.png')"></div>
+        </div>
         <div class="parallax-content">
             <h2>Love Story & Pre‑Wedding</h2>
             <p>Styling, locations and narrative</p>

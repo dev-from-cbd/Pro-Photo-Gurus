@@ -1,25 +1,41 @@
-// Simple image slider
-let currentSlide = 0;
-const slides = document.querySelectorAll('.slide');
-const totalSlides = slides.length;
+document.addEventListener('DOMContentLoaded', function () {
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
 
-function showSlide(index) {
-    if (totalSlides === 0) return;
-    slides.forEach(slide => slide.classList.remove('active'));
-    slides[index].classList.add('active');
-}
+    function showSlide(index) {
+        if (totalSlides === 0) return;
+        slides.forEach(slide => slide.classList.remove('active'));
+        slides[index].classList.add('active');
+    }
 
-function nextSlide() {
-    if (totalSlides === 0) return;
-    currentSlide = (currentSlide + 1) % totalSlides;
-    showSlide(currentSlide);
-}
+    function nextSlide() {
+        if (totalSlides === 0) return;
+        currentSlide = (currentSlide + 1) % totalSlides;
+        showSlide(currentSlide);
+    }
 
-// Auto-advance slider every 4 seconds
-if (totalSlides > 0) {
-    showSlide(0);
-    setInterval(nextSlide, 4000);
-}
+    if (totalSlides > 0) {
+        showSlide(0);
+        setInterval(nextSlide, 4000);
+    }
+
+    const loveStorySlider = document.querySelector('[data-love-story-slider]');
+    if (loveStorySlider) {
+        const heroSlides = Array.from(loveStorySlider.querySelectorAll('.love-story-hero-slide'));
+        let heroIndex = 0;
+        const heroTotal = heroSlides.length;
+        const changeHero = () => {
+            if (!heroTotal) return;
+            heroSlides.forEach(s => s.classList.remove('is-active'));
+            heroIndex = (heroIndex + 1) % heroTotal;
+            heroSlides[heroIndex].classList.add('is-active');
+        };
+        if (heroTotal > 1) {
+            setInterval(changeHero, 4500);
+        }
+    }
+});
 
 // Smooth scrolling for same-page navigation links only
 document.querySelectorAll('nav a').forEach(anchor => {

@@ -333,7 +333,7 @@ nav+.header {
 .love-story-hero .parallax-content {
     text-align: left;
     margin-left: 8%;
-    transform: translateY(40%); /* Move text lower to avoid covering faces */
+    transform: translateY(40%);
 }
 
 /* Franchise CTA spacing */

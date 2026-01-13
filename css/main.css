@@ -325,6 +325,17 @@ nav+.header {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 
+/* Love Story Hero Adjustments */
+.love-story-hero {
+    justify-content: flex-start !important;
+}
+
+.love-story-hero .parallax-content {
+    text-align: left;
+    margin-left: 8%;
+    transform: translateY(40%); /* Move text lower to avoid covering faces */
+}
+
 /* Franchise CTA spacing */
 #promo-franchise .parallax-content p {
     margin: 0 0 18px;

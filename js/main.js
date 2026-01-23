@@ -104,9 +104,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         var wrap = document.createElement('div');
         wrap.className = 'footer-services';
-        var title = document.createElement('h4');
-        title.textContent = 'Services';
-        wrap.appendChild(title);
+        var servicesBtn = document.createElement('a');
+        servicesBtn.href = base ? base + '/services/' : 'services/';
+        servicesBtn.innerHTML = '<svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2" /><path d="M8 7V5h8v2" /></svg> Services';
+        wrap.appendChild(servicesBtn);
         services.forEach(function (item) {
             var a = document.createElement('a');
             a.href = base ? base + '/' + item[1] : item[1];
@@ -119,9 +120,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Rebuild quick links rows: remove Contact and split Discounts/Franchise
         var allLinks = Array.from(footerLinks.querySelectorAll('a'));
-        // Remove Contact
+        // Remove Contact and duplicate Services from primary row
         allLinks.forEach(function (a) {
-            if ((a.textContent || '').trim() === 'Contact') a.remove();
+            var text = (a.textContent || '').trim();
+            if (text === 'Contact' || text === 'Services') a.remove();
         });
         // Collect again after removal
         allLinks = Array.from(footerLinks.querySelectorAll('a'));

@@ -145,13 +145,17 @@ document.addEventListener('DOMContentLoaded', function () {
                 primaryRow.appendChild(a);
             }
         });
-        // Ensure Gallery is present and correctly linked
-        var hasGallery = allLinks.some(function(a){ return (a.textContent||'').trim() === 'Gallery'; });
-        if (!hasGallery) {
-            var gallery = document.createElement('a');
-            gallery.href = base ? base + '/gallery/' : 'gallery/';
-            gallery.innerHTML = '<svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="M10 9l2 3 3-4 4 6H5z" /></svg> Gallery';
-            primaryRow.appendChild(gallery);
+        // Ensure Portfolio link to homepage section is present
+        var hasPortfolio = allLinks.some(function(a){ return (a.textContent||'').trim() === 'Portfolio'; });
+        if (!hasPortfolio) {
+            var portfolio = document.createElement('a');
+            var href = '#gallery';
+            if (!isRoot) {
+                href = base ? base + '/index.html#gallery' : 'index.html#gallery';
+            }
+            portfolio.href = href;
+            portfolio.innerHTML = '<svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="M10 9l2 3 3-4 4 6H5z" /></svg> Portfolio';
+            primaryRow.appendChild(portfolio);
         }
 
         // Clear original and append rows

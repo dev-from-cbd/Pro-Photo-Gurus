@@ -86,6 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         var services = [
             ['Portraits & Headshots', 'services/portraits/'],
+            ['School Photographer', 'services/school-photographer/'],
             ['Love Story & Pre‑Wedding', 'services/love-story/'],
             ['Families & Kids', 'services/families-kids/'],
             ['Branding & Social', 'services/branding-social/'],
@@ -134,6 +135,10 @@ document.addEventListener('DOMContentLoaded', function () {
         // Move anchors into rows preserving icons
         allLinks.forEach(function (a) {
             var text = (a.textContent || '').trim();
+            // Ensure Home has an icon
+            if (text === 'Home' && !a.querySelector('svg')) {
+                a.innerHTML = '<svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-8 9 8" /><path d="M5 10v10h14V10" /><path d="M10 21v-6h4v6" /></svg> Home';
+            }
             if (text === 'Discounts' || text === 'Franchise') {
                 secondaryRow.appendChild(a);
             } else {
